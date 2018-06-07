@@ -11,8 +11,11 @@ class CharacterServiceImpl;
 
 class CharacterService {
  public:
-  CharacterService(const CharacterService& service)
-  CharacterService();
+  CharacterService() = delete;
+  CharacterService(const CharacterService& service) = delete;
+  CharacterService(CharacterService&& service) = delete;
+  CharacterService& operator=(const CharacterService& service) = delete;
+  CharacterService& operator=(CharacterService&& service) = delete;
 
   void StartService();
  private:
