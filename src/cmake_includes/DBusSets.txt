@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 2.6)
+cmake_policy(SET CMP0011 NEW)
+
+set(DBUS_INCLUDE_DIRECTORIES /home/dima/work/capicxx-core-runtime/include
+		  	     /home/dima/work/capicxx-dbus-runtime/include
+		  	     /home/dima/work/dbus-1.10.10)
+set(DBUS_LINK_DIRECTORIES /home/dima/work/capicxx-core-runtime/build
+ 		 	  /home/dima/work/capicxx-dbus-runtime/build
+		 	  /home/dima/work/dbus-1.10.10/dbus/.libs)
+set(DBUS_LIBS CommonAPI 
+              CommonAPI-DBus 
+              dbus-1)

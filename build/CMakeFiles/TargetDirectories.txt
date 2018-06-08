@@ -1,0 +1,8 @@
+/home/dima/work/DBusStateMachine/build/CMakeFiles/rebuild_cache.dir
+/home/dima/work/DBusStateMachine/build/CMakeFiles/edit_cache.dir
+/home/dima/work/DBusStateMachine/build/human_character/CMakeFiles/rebuild_cache.dir
+/home/dima/work/DBusStateMachine/build/human_character/CMakeFiles/HumanCharacterService.dir
+/home/dima/work/DBusStateMachine/build/human_character/CMakeFiles/edit_cache.dir
+/home/dima/work/DBusStateMachine/build/player/CMakeFiles/rebuild_cache.dir
+/home/dima/work/DBusStateMachine/build/player/CMakeFiles/Player.dir
+/home/dima/work/DBusStateMachine/build/player/CMakeFiles/edit_cache.dir
