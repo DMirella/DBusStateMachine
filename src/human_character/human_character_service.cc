@@ -17,7 +17,7 @@ bool HumanCharacterService::Initialize() {
     std::cerr << "Error in HumanCharacterService::Initialize(): runtime_ == nullptr\n";
     return false;
   }
-  service_ = std::make_shared<HumanCharacterServiceImpl>(nullptr);
+  service_ = std::make_shared<HumanCharacterServiceImpl>();
   if (service_ == nullptr) {
     std::cerr << "Error in HumanCharacterService::Initialize(): service_ == nullptr\n";
     return false;

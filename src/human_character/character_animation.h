@@ -3,55 +3,23 @@
 
 #include <vector>
 
-#include "animation_object.h"
+#include "animation.h"
 
 namespace DBusStateMachine {
 class CharacterAnimation : public AnimationObject {
  public:
   virtual ~CharacterAnimation() {}
+  // CharacterAnimation
+  virtual Snap MakeSnap() const override { return Snap(current_snap_->image()); }
  protected:
-  CharacterAnimation(int speed, const std::vector<Sprite>& sprites);
-  
-  int speed_;
-  std::vector<Sprite> sprites_;
-};
+  CharacterAnimation() {}
+  CharacterAnimation(int x, int y, int width, int height, const std::vector<Snap>& snaps, int speed)
+    : AnimationObject(x, y, width, height), snaps_(snaps), speed_(speed) {}
 
-class ArmCharacterAnimation : public CharacterAnimation {
- public:
-  ArmCharacterAnimation() = delete;
-  ArmCharacterAnimation(const ArmCharacterAnimation& service) = delete;
-  ArmCharacterAnimation(ArmCharacterAnimation&& service) = delete;
-  ArmCharacterAnimation& operator=(const ArmCharacterAnimation& service) = delete;
-  ArmCharacterAnimation& operator=(ArmCharacterAnimation&& service) = delete;
-  
-  void Up() const;
-  void Down() const;
-  // CharacterAnimation
-  virtual Sprite MakeSnapshot() const override;
+  std::vector<Snap> snaps_;
+  std::vector<Snap>::iterator current_snap_;
+  int speed_;  // count snap views for one second
 };
-
-class LegCharacterAnimation : public CharacterAnimation {
- public:
-  LegCharacterAnimation() = delete; 
-  LegCharacterAnimation(const LegCharacterAnimation& service) = delete;
-  LegCharacterAnimation(LegCharacterAnimation&& service) = delete;
-  LegCharacterAnimation& operator=(const LegCharacterAnimation& service) = delete;
-  LegCharacterAnimation& operator=(LegCharacterAnimation&& service) = delete;
-  // CharacterAnimation
-  virtual Sprite MakeSnapshot() const override;
-};
-
-class BodyCharacterAnimation : public CharacterAnimation {
- public:
-  BodyCharacterAnimation() = delete;
-  BodyCharacterAnimation(const BodyCharacterAnimation& service) = delete;
-  BodyCharacterAnimation(BodyCharacterAnimation&& service) = delete;
-  BodyCharacterAnimation& operator=(const BodyCharacterAnimation& service) = delete;
-  BodyCharacterAnimation& operator=(BodyCharacterAnimation&& service) = delete;
-  // CharacterAnimation
-  virtual Sprite MakeSnapshot() const override;
-};
-
 }  // DBusStateMachine
 
 #endif  // DBUSSTATEMACHINE_SRC_CHARACTER_CHARACTER_ANIMATION_H_

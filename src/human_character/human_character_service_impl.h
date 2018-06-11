@@ -5,24 +5,22 @@
 
 #include "CommonAPI/CommonAPI.hpp"
 
+#include "human_character.h"
 #include "v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp"
 
 namespace DBusStateMachine {
 namespace DBusHumanCharacterService = v1::com::luxoft::humancharacterservice;
 
-class HumanCharacterAnimation;
-
 class HumanCharacterServiceImpl 
     : public DBusHumanCharacterService::HumanCharacterServiceStubDefault {
   //class HumanCharacterState;
  public:
-  HumanCharacterServiceImpl() = delete;
   HumanCharacterServiceImpl(const HumanCharacterServiceImpl& service) = delete;
   HumanCharacterServiceImpl(HumanCharacterServiceImpl&& service) = delete;
   HumanCharacterServiceImpl& operator=(const HumanCharacterServiceImpl& service) = delete;
   HumanCharacterServiceImpl& operator=(HumanCharacterServiceImpl&& service) = delete;
 
-  explicit HumanCharacterServiceImpl(HumanCharacterAnimation* animation);
+  HumanCharacterServiceImpl() {}
   virtual ~HumanCharacterServiceImpl() {}
   // CharacterServiceDefault
   virtual void ArmUp(const std::shared_ptr<CommonAPI::ClientId> _client, 
@@ -33,7 +31,7 @@ class HumanCharacterServiceImpl
 		       ArmDownReply_t _reply) override;
  private:
   //std::unique_ptr<HumanCharacterState> state_;
-  HumanCharacterAnimation* animation_;  // not deleted
+  HumanCharacter human_;  // not deleted
 };
 
 class HumanCharacterState {};

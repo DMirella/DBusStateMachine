@@ -13,4 +13,4 @@ include_directories(${SERVICE_SRCGEN}
 link_directories(${DBUS_LINK_DIRECTORIES})
 
 add_executable(HumanCharacterService ${CC_FILES} ${SERVICE_SRCGEN_CCPS})
-target_link_libraries(HumanCharacterService ${DBUS_LIBS})
+target_link_libraries(HumanCharacterService pthread ${DBUS_LIBS})

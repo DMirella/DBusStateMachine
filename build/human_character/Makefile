@@ -125,6 +125,60 @@ HumanCharacterService/fast:
 	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/build
 .PHONY : HumanCharacterService/fast
 
+animation.o: animation.cc.o
+
+.PHONY : animation.o
+
+# target to build an object file
+animation.cc.o:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/animation.cc.o
+.PHONY : animation.cc.o
+
+animation.i: animation.cc.i
+
+.PHONY : animation.i
+
+# target to preprocess a source file
+animation.cc.i:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/animation.cc.i
+.PHONY : animation.cc.i
+
+animation.s: animation.cc.s
+
+.PHONY : animation.s
+
+# target to generate assembly for a file
+animation.cc.s:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/animation.cc.s
+.PHONY : animation.cc.s
+
+animation_screen.o: animation_screen.cc.o
+
+.PHONY : animation_screen.o
+
+# target to build an object file
+animation_screen.cc.o:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/animation_screen.cc.o
+.PHONY : animation_screen.cc.o
+
+animation_screen.i: animation_screen.cc.i
+
+.PHONY : animation_screen.i
+
+# target to preprocess a source file
+animation_screen.cc.i:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/animation_screen.cc.i
+.PHONY : animation_screen.cc.i
+
+animation_screen.s: animation_screen.cc.s
+
+.PHONY : animation_screen.s
+
+# target to generate assembly for a file
+animation_screen.cc.s:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/animation_screen.cc.s
+.PHONY : animation_screen.cc.s
+
 home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.o: home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp.o
 
 .PHONY : home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.o
@@ -205,6 +259,60 @@ home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/Huma
 home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp.s:
 	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp.s
 .PHONY : home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp.s
+
+human_character.o: human_character.cc.o
+
+.PHONY : human_character.o
+
+# target to build an object file
+human_character.cc.o:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o
+.PHONY : human_character.cc.o
+
+human_character.i: human_character.cc.i
+
+.PHONY : human_character.i
+
+# target to preprocess a source file
+human_character.cc.i:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.i
+.PHONY : human_character.cc.i
+
+human_character.s: human_character.cc.s
+
+.PHONY : human_character.s
+
+# target to generate assembly for a file
+human_character.cc.s:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.s
+.PHONY : human_character.cc.s
+
+human_character_animation.o: human_character_animation.cc.o
+
+.PHONY : human_character_animation.o
+
+# target to build an object file
+human_character_animation.cc.o:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o
+.PHONY : human_character_animation.cc.o
+
+human_character_animation.i: human_character_animation.cc.i
+
+.PHONY : human_character_animation.i
+
+# target to preprocess a source file
+human_character_animation.cc.i:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.i
+.PHONY : human_character_animation.cc.i
+
+human_character_animation.s: human_character_animation.cc.s
+
+.PHONY : human_character_animation.s
+
+# target to generate assembly for a file
+human_character_animation.cc.s:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.s
+.PHONY : human_character_animation.cc.s
 
 human_character_service.o: human_character_service.cc.o
 
@@ -296,6 +404,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... HumanCharacterService"
 	@echo "... edit_cache"
+	@echo "... animation.o"
+	@echo "... animation.i"
+	@echo "... animation.s"
+	@echo "... animation_screen.o"
+	@echo "... animation_screen.i"
+	@echo "... animation_screen.s"
 	@echo "... home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.o"
 	@echo "... home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.i"
 	@echo "... home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.s"
@@ -305,6 +419,12 @@ help:
 	@echo "... home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.o"
 	@echo "... home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.i"
 	@echo "... home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.s"
+	@echo "... human_character.o"
+	@echo "... human_character.i"
+	@echo "... human_character.s"
+	@echo "... human_character_animation.o"
+	@echo "... human_character_animation.i"
+	@echo "... human_character_animation.s"
 	@echo "... human_character_service.o"
 	@echo "... human_character_service.i"
 	@echo "... human_character_service.s"
