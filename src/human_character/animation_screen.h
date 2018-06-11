@@ -20,7 +20,7 @@ class AnimationScreen {
   
   static AnimationScreen* GetInstance();
   
-  inline void set_main_animation(Animation* animation) { 
+  inline void set_main_animation(std::shared_ptr<Animation> animation) { 
     main_animation_ = animation;
   }
  private:
@@ -32,7 +32,7 @@ class AnimationScreen {
 
   std::atomic<bool> is_need_to_destroy_screen_thread_;
   std::thread screen_thread_;
-  Animation* main_animation_;
+  std::shared_ptr<Animation> main_animation_;
 };
 }  // DBusStateMachine
 

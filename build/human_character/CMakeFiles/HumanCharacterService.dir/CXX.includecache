@@ -85,6 +85,8 @@ sstream
 /home/dima/work/DBusStateMachine/src/human_character/animation.cc
 animation.h
 /home/dima/work/DBusStateMachine/src/human_character/animation.h
+iostream
+-
 
 /home/dima/work/DBusStateMachine/src/human_character/animation.h
 memory
@@ -123,6 +125,8 @@ human_character.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character.h
 animation_screen.h
 /home/dima/work/DBusStateMachine/src/human_character/animation_screen.h
+human_character_snaps.h
+/home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character.h
 memory
@@ -137,6 +141,8 @@ human_character_animation.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
 human_character_snaps.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+iostream
+-
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
 animation.h

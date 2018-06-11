@@ -109,6 +109,7 @@ human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home
 human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character.cc
 human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
+human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
 
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o: /home/dima/work/DBusStateMachine/src/human_character/animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o: /home/dima/work/DBusStateMachine/src/human_character/character_animation.h

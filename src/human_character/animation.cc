@@ -1,5 +1,7 @@
 #include "animation.h"
 
+#include <iostream>
+
 namespace DBusStateMachine {
 void AnimationArea::AddAnimation(std::shared_ptr<Animation> animation) {
   animations_.emplace_back(animation);
@@ -17,7 +19,7 @@ Snap AnimationArea::MakeSnap() const {
     for (int shift_y = 0; shift_y < animation_height; ++shift_y) {
       for (int shift_x = 0; shift_x < animation_width; ++shift_x) {
 	auto &current_image_pixel = image[animation_y + shift_y][animation_x + shift_x];
-	if (current_image_pixel != kEmptyPixel) {
+	if (animation_image[shift_y][shift_x] != kEmptyPixel) {
           current_image_pixel = animation_image[shift_y][shift_x];
 	}
       }

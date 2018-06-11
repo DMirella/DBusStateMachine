@@ -27,7 +27,12 @@ void AnimationScreen::StartScreenThread() {
   is_need_to_destroy_screen_thread_ = false;
   screen_thread_ = std::thread([this]() {
                            while (!is_need_to_destroy_screen_thread_) {
-                             PrintSnap(main_animation_->MakeSnap());
+			     system("clear");
+			     if (main_animation_ != nullptr) {
+                               PrintSnap(main_animation_->MakeSnap());
+			     } else {
+			       std::cout << "No animation to view.\n";
+			     }
                              std::this_thread::sleep_for(kPauseScreenThreadTimeMs);
                            } 
                          });

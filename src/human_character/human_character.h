@@ -16,7 +16,7 @@ class HumanCharacter {
  private:
   bool Init();
 
-  AnimationArea animation_area_;
+  std::shared_ptr<AnimationArea> animation_area_;
   std::shared_ptr<HeadHumanCharacterAnimation> animation_head_;
   std::shared_ptr<BodyHumanCharacterAnimation> animation_body_;
   std::shared_ptr<ArmHumanCharacterAnimation> animation_left_arm_, animation_right_arm_;

@@ -14,7 +14,7 @@ class CharacterAnimation : public AnimationObject {
  protected:
   CharacterAnimation() {}
   CharacterAnimation(int x, int y, int width, int height, const std::vector<Snap>& snaps, int speed)
-    : AnimationObject(x, y, width, height), snaps_(snaps), speed_(speed) {}
+    : AnimationObject(x, y, width, height), snaps_(snaps), speed_(speed), current_snap_(snaps_.begin()) {}
 
   std::vector<Snap> snaps_;
   std::vector<Snap>::iterator current_snap_;
