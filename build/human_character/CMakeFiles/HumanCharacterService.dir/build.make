@@ -201,9 +201,33 @@ human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_imp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o.provides.build: human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o
 
 
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: human_character/CMakeFiles/HumanCharacterService.dir/flags.make
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o"
+	cd /home/dima/work/DBusStateMachine/build/human_character && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o -c /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc
+
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.i"
+	cd /home/dima/work/DBusStateMachine/build/human_character && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc > CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.i
+
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.s"
+	cd /home/dima/work/DBusStateMachine/build/human_character && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc -o CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.s
+
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o.requires:
+
+.PHONY : human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o.requires
+
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o.provides: human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o.requires
+	$(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o.provides.build
+.PHONY : human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o.provides
+
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o.provides.build: human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o
+
+
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: human_character/CMakeFiles/HumanCharacterService.dir/flags.make
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src/human_character/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o"
 	cd /home/dima/work/DBusStateMachine/build/human_character && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HumanCharacterService.dir/main.cc.o -c /home/dima/work/DBusStateMachine/src/human_character/main.cc
 
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.i: cmake_force
@@ -227,7 +251,7 @@ human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o.provides.build: h
 
 human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp.o: human_character/CMakeFiles/HumanCharacterService.dir/flags.make
 human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp.o"
 	cd /home/dima/work/DBusStateMachine/build/human_character && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp.o -c /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp
 
 human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp.i: cmake_force
@@ -251,7 +275,7 @@ human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMac
 
 human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusStubAdapter.cpp.o: human_character/CMakeFiles/HumanCharacterService.dir/flags.make
 human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusStubAdapter.cpp.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusStubAdapter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusStubAdapter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusStubAdapter.cpp.o"
 	cd /home/dima/work/DBusStateMachine/build/human_character && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusStubAdapter.cpp.o -c /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusStubAdapter.cpp
 
 human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusStubAdapter.cpp.i: cmake_force
@@ -275,7 +299,7 @@ human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMac
 
 human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp.o: human_character/CMakeFiles/HumanCharacterService.dir/flags.make
 human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp.o"
 	cd /home/dima/work/DBusStateMachine/build/human_character && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp.o -c /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp
 
 human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp.i: cmake_force
@@ -305,6 +329,7 @@ HumanCharacterService_OBJECTS = \
 "CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o" \
 "CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o" \
 "CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o" \
+"CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o" \
 "CMakeFiles/HumanCharacterService.dir/main.cc.o" \
 "CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp.o" \
 "CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusStubAdapter.cpp.o" \
@@ -319,13 +344,14 @@ human_character/HumanCharacterService: human_character/CMakeFiles/HumanCharacter
 human_character/HumanCharacterService: human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o
 human_character/HumanCharacterService: human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o
 human_character/HumanCharacterService: human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o
+human_character/HumanCharacterService: human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o
 human_character/HumanCharacterService: human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o
 human_character/HumanCharacterService: human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp.o
 human_character/HumanCharacterService: human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusStubAdapter.cpp.o
 human_character/HumanCharacterService: human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.cpp.o
 human_character/HumanCharacterService: human_character/CMakeFiles/HumanCharacterService.dir/build.make
 human_character/HumanCharacterService: human_character/CMakeFiles/HumanCharacterService.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable HumanCharacterService"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable HumanCharacterService"
 	cd /home/dima/work/DBusStateMachine/build/human_character && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HumanCharacterService.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -339,6 +365,7 @@ human_character/CMakeFiles/HumanCharacterService.dir/requires: human_character/C
 human_character/CMakeFiles/HumanCharacterService.dir/requires: human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o.requires
 human_character/CMakeFiles/HumanCharacterService.dir/requires: human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o.requires
 human_character/CMakeFiles/HumanCharacterService.dir/requires: human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o.requires
+human_character/CMakeFiles/HumanCharacterService.dir/requires: human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o.requires
 human_character/CMakeFiles/HumanCharacterService.dir/requires: human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o.requires
 human_character/CMakeFiles/HumanCharacterService.dir/requires: human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp.o.requires
 human_character/CMakeFiles/HumanCharacterService.dir/requires: human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusStubAdapter.cpp.o.requires

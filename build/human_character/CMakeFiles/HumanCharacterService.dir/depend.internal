@@ -164,6 +164,44 @@ human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_imp
  /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.cc
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/ByteBuffer.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/CallInfo.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/CommonAPI.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Config.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/ContainerUtils.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Deployable.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Deployment.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Enumeration.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Event.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Export.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Factory.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/InputStream.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Logger.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/LoggerImpl.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/MainLoopContext.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/OutputStream.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Runtime.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Struct.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Stub.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Variant.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o
+ /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterService.hpp
+ /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStub.hpp
+ /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
+ /home/dima/work/DBusStateMachine/src/human_character/animation.h
+ /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp

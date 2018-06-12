@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dima/work/DBusStateMachine/src/human_character/human_character_animation.cc" "/home/dima/work/DBusStateMachine/build/human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o"
   "/home/dima/work/DBusStateMachine/src/human_character/human_character_service.cc" "/home/dima/work/DBusStateMachine/build/human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o"
   "/home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.cc" "/home/dima/work/DBusStateMachine/build/human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o"
+  "/home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc" "/home/dima/work/DBusStateMachine/build/human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o"
   "/home/dima/work/DBusStateMachine/src/human_character/main.cc" "/home/dima/work/DBusStateMachine/build/human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

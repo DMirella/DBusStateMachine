@@ -368,6 +368,33 @@ human_character_service_impl.cc.s:
 	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.s
 .PHONY : human_character_service_impl.cc.s
 
+human_character_service_state.o: human_character_service_state.cc.o
+
+.PHONY : human_character_service_state.o
+
+# target to build an object file
+human_character_service_state.cc.o:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o
+.PHONY : human_character_service_state.cc.o
+
+human_character_service_state.i: human_character_service_state.cc.i
+
+.PHONY : human_character_service_state.i
+
+# target to preprocess a source file
+human_character_service_state.cc.i:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.i
+.PHONY : human_character_service_state.cc.i
+
+human_character_service_state.s: human_character_service_state.cc.s
+
+.PHONY : human_character_service_state.s
+
+# target to generate assembly for a file
+human_character_service_state.cc.s:
+	cd /home/dima/work/DBusStateMachine/build && $(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.s
+.PHONY : human_character_service_state.cc.s
+
 main.o: main.cc.o
 
 .PHONY : main.o
@@ -431,6 +458,9 @@ help:
 	@echo "... human_character_service_impl.o"
 	@echo "... human_character_service_impl.i"
 	@echo "... human_character_service_impl.s"
+	@echo "... human_character_service_state.o"
+	@echo "... human_character_service_state.i"
+	@echo "... human_character_service_state.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

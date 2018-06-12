@@ -33,9 +33,15 @@ int main(){
         = static_cast<DBusStateMachine::HumanCharacterServiceClient::Arm>(rand() % 2);
     switch (rand() % 2) {
      case 0:
+      std::cout << "Try to moving up " 
+          << ((arm == DBusStateMachine::HumanCharacterServiceClient::Arm::LEFT)? "left" : "right")
+          << " arm\n";
       service_client.ArmUp(arm);
       break;
      case 1:
+      std::cout << "Try to moving down " 
+          << ((arm == DBusStateMachine::HumanCharacterServiceClient::Arm::LEFT)? "left" : "right")
+          << " arm\n";
       service_client.ArmDown(arm);
       break;
     }

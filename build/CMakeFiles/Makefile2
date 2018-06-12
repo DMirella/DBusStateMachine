@@ -84,7 +84,7 @@ human_character/preinstall:
 human_character/CMakeFiles/HumanCharacterService.dir/all:
 	$(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/depend
 	$(MAKE) -f human_character/CMakeFiles/HumanCharacterService.dir/build.make human_character/CMakeFiles/HumanCharacterService.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target HumanCharacterService"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target HumanCharacterService"
 .PHONY : human_character/CMakeFiles/HumanCharacterService.dir/all
 
 # Include target in all.
@@ -94,7 +94,7 @@ all: human_character/CMakeFiles/HumanCharacterService.dir/all
 
 # Build rule for subdir invocation for target.
 human_character/CMakeFiles/HumanCharacterService.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dima/work/DBusStateMachine/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dima/work/DBusStateMachine/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 human_character/CMakeFiles/HumanCharacterService.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dima/work/DBusStateMachine/build/CMakeFiles 0
 .PHONY : human_character/CMakeFiles/HumanCharacterService.dir/rule
@@ -139,7 +139,7 @@ player/preinstall:
 player/CMakeFiles/Player.dir/all:
 	$(MAKE) -f player/CMakeFiles/Player.dir/build.make player/CMakeFiles/Player.dir/depend
 	$(MAKE) -f player/CMakeFiles/Player.dir/build.make player/CMakeFiles/Player.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=12,13,14,15,16 "Built target Player"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dima/work/DBusStateMachine/build/CMakeFiles --progress-num=13,14,15,16,17 "Built target Player"
 .PHONY : player/CMakeFiles/Player.dir/all
 
 # Include target in all.

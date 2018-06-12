@@ -56,10 +56,16 @@ void HumanCharacterServiceClient::ArmUp(Arm arm) {
       = (arm == Arm::LEFT)? v1::com::luxoft::humancharacterservice::HumanCharacterService::Arm::LEFT 
                           : v1::com::luxoft::humancharacterservice::HumanCharacterService::Arm::RIGHT;
   service_proxy_->ArmUpAsync(service_arm, [](CommonAPI::CallStatus status, const std::string& reply) {
-			       
+			       std::cout << "Service reply: " << reply << std::endl;
                              });
 }
 
 void HumanCharacterServiceClient::ArmDown(Arm arm) {
+  v1::com::luxoft::humancharacterservice::HumanCharacterService::Arm service_arm 
+      = (arm == Arm::LEFT)? v1::com::luxoft::humancharacterservice::HumanCharacterService::Arm::LEFT 
+                          : v1::com::luxoft::humancharacterservice::HumanCharacterService::Arm::RIGHT;
+  service_proxy_->ArmDownAsync(service_arm, [](CommonAPI::CallStatus status, const std::string& reply) {
+			       std::cout << "Service reply: " << reply << std::endl;
+                             });
 }
 }  // DBusStateMachine

@@ -179,6 +179,8 @@ character_animation.h
 /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
 human_character_animation.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
+human_character_service_state.h
+/home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
 memory
@@ -189,6 +191,16 @@ human_character.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character.h
 v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
 /home/dima/work/DBusStateMachine/src/human_character/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
+
+/home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc
+human_character_service_state.h
+/home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
+human_character_service_impl.h
+/home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
+
+/home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
+string
+-
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
 string
