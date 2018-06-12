@@ -15,7 +15,7 @@ class ArmHumanCharacterAnimation : public CharacterAnimation {
 
   ArmHumanCharacterAnimation() {}
   ArmHumanCharacterAnimation(int x, int y, Arm arm);
-  virtual ~ArmHumanCharacterAnimation() {}
+  ~ArmHumanCharacterAnimation() {}
   
   void PlayUpArmAnimation();
   void PlayDownArmAnimation();
@@ -30,7 +30,7 @@ class LegHumanCharacterAnimation : public CharacterAnimation {
 
   LegHumanCharacterAnimation() {}
   LegHumanCharacterAnimation(int x, int y);
-  virtual ~LegHumanCharacterAnimation() {}
+  ~LegHumanCharacterAnimation() {}
 };
 
 class BodyHumanCharacterAnimation : public CharacterAnimation {
@@ -42,7 +42,7 @@ class BodyHumanCharacterAnimation : public CharacterAnimation {
 
   BodyHumanCharacterAnimation() {}
   BodyHumanCharacterAnimation(int x, int y);
-  virtual ~BodyHumanCharacterAnimation() {}
+  ~BodyHumanCharacterAnimation() {}
 };
 
 class HeadHumanCharacterAnimation : public CharacterAnimation {
@@ -54,7 +54,7 @@ class HeadHumanCharacterAnimation : public CharacterAnimation {
 
   HeadHumanCharacterAnimation() {}
   HeadHumanCharacterAnimation(int x, int y);
-  virtual ~HeadHumanCharacterAnimation() {}
+  ~HeadHumanCharacterAnimation() {}
 };
 }  // DBusStateMachine
 

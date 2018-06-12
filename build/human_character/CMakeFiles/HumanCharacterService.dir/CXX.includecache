@@ -145,6 +145,8 @@ unistd.h
 -
 iostream
 -
+thread
+-
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
 animation.h
@@ -173,7 +175,11 @@ human_character_service_impl.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.cc
 human_character_service_impl.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
+future
+-
 iostream
+-
+thread
 -
 character_animation.h
 /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
@@ -195,12 +201,18 @@ v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc
 human_character_service_state.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
+future
+-
 human_character_service_impl.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
 string
 -
+thread
+-
+human_character_service_impl.h
+/home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
 string

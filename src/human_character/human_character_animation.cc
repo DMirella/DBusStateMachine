@@ -3,6 +3,7 @@
 #include <unistd.h>
 
 #include <iostream>
+#include <thread>
 
 namespace DBusStateMachine {
 namespace {
@@ -30,6 +31,20 @@ ArmHumanCharacterAnimation::ArmHumanCharacterAnimation(int x, int y, Arm arm)
 			     : ArmHumanCharacterSnaps::kRightArmSnaps), ArmHumanCharacterSnaps::kSpeed) {
 }
 
+void ArmHumanCharacterAnimation::PlayUpArmAnimation() {
+  for (int i = 0; i < snaps_.size(); ++i) {
+    current_snap_ = snaps_.begin() + i;
+    std::this_thread::sleep_for(std::chrono::nanoseconds(kTimoutAnimationNs));
+  }
+}
+
+void ArmHumanCharacterAnimation::PlayDownArmAnimation() {
+  for (int i = snaps_.size() - 1; i >= 0; --i) {
+    current_snap_ = snaps_.begin() + i;
+    std::this_thread::sleep_for(std::chrono::nanoseconds(kTimoutAnimationNs));
+  }
+}
+
 LegHumanCharacterAnimation::LegHumanCharacterAnimation(int x, int y) 
     : CharacterAnimation(x, y, LegHumanCharacterSnaps::kWidth, LegHumanCharacterSnaps::kHeight, 
 			 StringsToSnaps(LegHumanCharacterSnaps::kSnaps), LegHumanCharacterSnaps::kSpeed) {
@@ -43,19 +58,5 @@ BodyHumanCharacterAnimation::BodyHumanCharacterAnimation(int x, int y)
 HeadHumanCharacterAnimation::HeadHumanCharacterAnimation(int x, int y) 
     : CharacterAnimation(x, y, HeadHumanCharacterSnaps::kWidth, HeadHumanCharacterSnaps::kHeight, 
 			 StringsToSnaps(HeadHumanCharacterSnaps::kSnaps), HeadHumanCharacterSnaps::kSpeed) {
-}
-
-void ArmHumanCharacterAnimation::PlayUpArmAnimation() {
-  for (int i = 0; i < snaps_.size(); ++i) {
-    current_snap_ = snaps_.begin() + i;
-    usleep(kTimoutAnimationNs);
-  }
-}
-
-void ArmHumanCharacterAnimation::PlayDownArmAnimation() {
-  for (int i = snaps_.size() - 1; i >= 0; --i) {
-    current_snap_ = snaps_.begin() + i;
-    usleep(kTimoutAnimationNs);
-  }
 }
 }  // DBusStateMachine
