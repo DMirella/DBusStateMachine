@@ -1,6 +1,6 @@
 #include "human_character_animation.h"
 
-#include "human_character_snaps.h"
+#include <unistd.h>
 
 #include <iostream>
 
@@ -27,7 +27,7 @@ std::vector<Snap> StringsToSnaps(const std::vector<std::vector<std::string>>& st
 ArmHumanCharacterAnimation::ArmHumanCharacterAnimation(int x, int y, Arm arm) 
     : CharacterAnimation(x, y, ArmHumanCharacterSnaps::kWidth, ArmHumanCharacterSnaps::kHeight, 
 			 StringsToSnaps((arm == Arm::LEFT)? ArmHumanCharacterSnaps::kLeftArmSnaps 
-			     : ArmHumanCharacterSnaps::kRightArmSnaps), ArmHumanCharacterSnaps::kSpeed), arm_(arm) {
+			     : ArmHumanCharacterSnaps::kRightArmSnaps), ArmHumanCharacterSnaps::kSpeed) {
 }
 
 LegHumanCharacterAnimation::LegHumanCharacterAnimation(int x, int y) 
@@ -45,17 +45,17 @@ HeadHumanCharacterAnimation::HeadHumanCharacterAnimation(int x, int y)
 			 StringsToSnaps(HeadHumanCharacterSnaps::kSnaps), HeadHumanCharacterSnaps::kSpeed) {
 }
 
-void ArmHumanCharacterAnimation::Up() const {
-  /*const int kTimoutNs = 1000000 / speed_;
-  for (current_snap_ = snaps_.begin(); current_snap_ != snaps_.end(); ++current_snap_) {
-    usleep(kTimoutNs);
-  }*/
+void ArmHumanCharacterAnimation::PlayUpArmAnimation() {
+  for (int i = 0; i < snaps_.size(); ++i) {
+    current_snap_ = snaps_.begin() + i;
+    usleep(kTimoutAnimationNs);
+  }
 }
 
-void ArmHumanCharacterAnimation::Down() const {
-  /*const int kTimoutNs = 1000000 / speed_;
-  for (current_snap_ = snaps_.rbegin(); current_snap_ != snaps_.rend(); --current_snap_) {
-    usleep(kTimoutNs);
-  }*/
+void ArmHumanCharacterAnimation::PlayDownArmAnimation() {
+  for (int i = snaps_.size() - 1; i >= 0; --i) {
+    current_snap_ = snaps_.begin() + i;
+    usleep(kTimoutAnimationNs);
+  }
 }
 }  // DBusStateMachine

@@ -7,6 +7,8 @@
 #include "animation.h"
 
 namespace DBusStateMachine {
+enum Arm {LEFT, RIGHT};
+
 namespace ArmHumanCharacterSnaps {
 const int kWidth = 2, kHeight = 3, kSpeed = 2;
 const std::vector<std::vector<std::string>> kLeftArmSnaps = 

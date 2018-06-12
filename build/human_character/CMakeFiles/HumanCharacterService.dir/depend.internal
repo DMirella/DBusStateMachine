@@ -128,6 +128,7 @@ human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service.cc
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp
@@ -163,6 +164,7 @@ human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_imp
  /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.cc
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp
@@ -198,6 +200,7 @@ human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o
  /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
  /home/dima/work/DBusStateMachine/src/human_character/main.cc
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp

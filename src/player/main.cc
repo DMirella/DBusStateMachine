@@ -1,11 +1,14 @@
 #include <unistd.h>
 
+#include <ctime>
 #include <string>
 
 #include "human_character_service_client.h"
 
 
 int main(){
+  srand(time(0));
+
   const std::string kServiceName = "HumanService";
   const int kMaxCountTryToConnect = 5;
   const int kTimeoutSleepForTimeNs = 100000;
@@ -26,6 +29,16 @@ int main(){
   
   std::cout << "Service was found, start to work...\n";
   while (true) {
+    DBusStateMachine::HumanCharacterServiceClient::Arm arm 
+        = static_cast<DBusStateMachine::HumanCharacterServiceClient::Arm>(rand() % 2);
+    switch (rand() % 2) {
+     case 0:
+      service_client.ArmUp(arm);
+      break;
+     case 1:
+      service_client.ArmDown(arm);
+      break;
+    }
     usleep(kTimeoutSleepForTimeNs);
   }
   

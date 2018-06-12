@@ -10,7 +10,6 @@ HumanCharacterService::HumanCharacterService(const std::string& service_name)
   }
 }
 
-
 bool HumanCharacterService::Initialize() {
   runtime_ = CommonAPI::Runtime::get();
   if (runtime_ == nullptr) {

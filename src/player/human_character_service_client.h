@@ -22,6 +22,10 @@ class HumanCharacterServiceClient {
   ~HumanCharacterServiceClient() {}
 
   bool WaitAvailable();
+
+  enum Arm {LEFT, RIGHT};
+  void ArmUp(Arm arm);
+  void ArmDown(Arm arm);
  private:
   bool Initialize();
   

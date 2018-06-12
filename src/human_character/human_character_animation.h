@@ -3,12 +3,11 @@
 
 #include "animation.h"
 #include "character_animation.h"
+#include "human_character_snaps.h"
 
 namespace DBusStateMachine {
 class ArmHumanCharacterAnimation : public CharacterAnimation {
  public:
-  enum Arm {LEFT, RIGHT};
-
   ArmHumanCharacterAnimation(const ArmHumanCharacterAnimation& animation) = delete;
   ArmHumanCharacterAnimation(ArmHumanCharacterAnimation&& animation) = delete;
   ArmHumanCharacterAnimation& operator=(const ArmHumanCharacterAnimation& animation) = delete;
@@ -18,10 +17,8 @@ class ArmHumanCharacterAnimation : public CharacterAnimation {
   ArmHumanCharacterAnimation(int x, int y, Arm arm);
   virtual ~ArmHumanCharacterAnimation() {}
   
-  void Up() const;
-  void Down() const;
- private:
-  Arm arm_;
+  void PlayUpArmAnimation();
+  void PlayDownArmAnimation();
 };
 
 class LegHumanCharacterAnimation : public CharacterAnimation {

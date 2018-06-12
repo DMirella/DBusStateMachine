@@ -123,10 +123,10 @@ animation.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character.cc
 human_character.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character.h
+iostream
+-
 animation_screen.h
 /home/dima/work/DBusStateMachine/src/human_character/animation_screen.h
-human_character_snaps.h
-/home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character.h
 memory
@@ -135,12 +135,14 @@ animation.h
 /home/dima/work/DBusStateMachine/src/human_character/animation.h
 human_character_animation.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
+human_character_snaps.h
+/home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.cc
 human_character_animation.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
-human_character_snaps.h
-/home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+unistd.h
+-
 iostream
 -
 
@@ -149,6 +151,8 @@ animation.h
 /home/dima/work/DBusStateMachine/src/human_character/animation.h
 character_animation.h
 /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
+human_character_snaps.h
+/home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service.cc
 human_character_service.h

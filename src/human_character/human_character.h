@@ -5,6 +5,7 @@
 
 #include "animation.h"
 #include "human_character_animation.h"
+#include "human_character_snaps.h"
 
 namespace DBusStateMachine {
 class AnimationScreen;
@@ -13,6 +14,9 @@ class HumanCharacter {
  public:
   HumanCharacter();
   ~HumanCharacter() {}
+
+  void ArmUp(Arm arm);
+  void ArmDown(Arm arm);
  private:
   bool Init();
 
