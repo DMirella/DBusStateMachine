@@ -8,8 +8,6 @@
 #include "human_character_constants.h"
 
 namespace DBusStateMachine {
-class AnimationScreen;
-
 class HumanCharacter {
  public:
   HumanCharacter(const HumanCharacter& human) = delete;
@@ -32,7 +30,6 @@ class HumanCharacter {
   std::shared_ptr<BodyHumanCharacterAnimation> animation_body_;
   std::shared_ptr<ArmHumanCharacterAnimation> animation_left_arm_, animation_right_arm_;
   std::shared_ptr<LegHumanCharacterAnimation> animation_left_leg_, animation_right_leg_;
-  AnimationScreen* screen_;
 };
 }  // DBusStateMachine
 

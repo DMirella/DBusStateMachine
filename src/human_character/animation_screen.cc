@@ -18,9 +18,9 @@ AnimationScreen::~AnimationScreen() {
   screen_thread_.join();
 }
 
-AnimationScreen* AnimationScreen::GetInstance() {
+AnimationScreen& AnimationScreen::GetInstance() {
   static AnimationScreen screen;
-  return &screen;
+  return screen;
 }
 
 void AnimationScreen::set_main_animation(const std::shared_ptr<Animation>& animation) {

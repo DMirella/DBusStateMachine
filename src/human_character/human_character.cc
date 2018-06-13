@@ -6,8 +6,7 @@
 
 namespace DBusStateMachine {
 HumanCharacter::HumanCharacter() 
-    : screen_(nullptr), is_human_character_ready_(false) {
-  screen_ = AnimationScreen::GetInstance();
+    : is_human_character_ready_(false) {
   if (!(is_human_character_ready_ = Init())) {
     std::cerr << "Error in HumanCharacter::HumanCharacter(): Initialization failed.\n";
   }
@@ -46,13 +45,8 @@ bool HumanCharacter::Init() {
   animation_area_->AddAnimation(animation_right_arm_);
   animation_area_->AddAnimation(animation_left_leg_);
   animation_area_->AddAnimation(animation_right_leg_);
-  
-  if (screen_ == nullptr) {
-    std::cerr << "Error in HumanCharacter::Init(): screen_ == nullptr\n";
-    return false;
-  }
-  screen_->set_main_animation(animation_area_);
-  
+
+  AnimationScreen::GetInstance().set_main_animation(animation_area_);
   return true;
 }
 

@@ -33,7 +33,7 @@ class Snap {
   Snap& operator=(const Snap& snap) = default;
   Snap& operator=(Snap&& snap) = default;
   
-  explicit Snap(PixelMap image) : image_(image) {}
+  explicit Snap(const PixelMap& image) : image_(image) {}
   Snap(int width, int height, Pixel pixel) 
     : width_(width), height_(height), 
       image_(std::vector<std::vector<Pixel>>(height, std::vector<Pixel>(width, pixel))) {}
