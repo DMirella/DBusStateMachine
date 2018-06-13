@@ -7,13 +7,7 @@
 #IncludeRegexTransform: 
 
 /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterService.hpp
-CommonAPI/InputStream.hpp
--
-CommonAPI/OutputStream.hpp
--
 CommonAPI/Types.hpp
--
-cstdint
 -
 
 /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp
@@ -21,8 +15,6 @@ HumanCharacterServiceDBusDeployment.hpp
 /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp
 
 /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp
-v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp
--
 CommonAPI/DBus/DBusDeployment.hpp
 -
 
@@ -37,8 +29,6 @@ v1/com/luxoft/humancharacterservice/HumanCharacterServiceStub.hpp
 -
 v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp
 /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp
-v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp
--
 CommonAPI/DBus/DBusAddressTranslator.hpp
 -
 CommonAPI/DBus/DBusFactory.hpp
@@ -56,12 +46,6 @@ functional
 sstream
 -
 v1/com/luxoft/humancharacterservice/HumanCharacterService.hpp
--
-CommonAPI/InputStream.hpp
--
-CommonAPI/OutputStream.hpp
--
-cstdint
 -
 vector
 -
@@ -143,6 +127,8 @@ human_character_animation.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
 unistd.h
 -
+chrono
+-
 iostream
 -
 thread
@@ -203,6 +189,8 @@ human_character_service_state.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
 future
 -
+iostream
+-
 human_character_service_impl.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
 
@@ -219,8 +207,6 @@ string
 -
 vector
 -
-animation.h
-/home/dima/work/DBusStateMachine/src/human_character/animation.h
 
 /home/dima/work/DBusStateMachine/src/human_character/main.cc
 unistd.h

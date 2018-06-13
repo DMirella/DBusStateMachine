@@ -13,8 +13,9 @@ namespace DBusHumanCharacterService = v1::com::luxoft::humancharacterservice;
 
 class ServiceInitializeState;
 class ServiceDestroyState;
-class ServiceArmMovingState;
-class ServiceWaitCommandState;
+class ServiceArmsMovingState;
+class ServiceArmsUpState;
+class ServiceArmsDownState;
 class ServiceState;
 
 class HumanCharacterServiceImpl 
@@ -28,20 +29,20 @@ class HumanCharacterServiceImpl
   HumanCharacterServiceImpl();
   virtual ~HumanCharacterServiceImpl();
   // CharacterServiceStubDefault
-  virtual void ArmUp(const std::shared_ptr<CommonAPI::ClientId> _client, 
-		     DBusHumanCharacterService::HumanCharacterService::Arm _arm, 
-		     ArmUpReply_t _reply) override;
-  virtual void ArmDown(const std::shared_ptr<CommonAPI::ClientId> _client, 
-		       DBusHumanCharacterService::HumanCharacterService::Arm _arm, 
-		       ArmDownReply_t _reply) override;
+  virtual void ArmsUp(const std::shared_ptr<CommonAPI::ClientId> _client, 
+		     ArmsUpReply_t _reply) override;
+  virtual void ArmsDown(const std::shared_ptr<CommonAPI::ClientId> _client,
+		       ArmsDownReply_t _reply) override;
   inline void ChangeState(std::shared_ptr<ServiceState> state) { current_state_ = state; }
  private:
-  friend class ServiceWaitCommandState;
+  friend class ServiceArmsUpState;
+  friend class ServiceArmsDownState;
 
   std::shared_ptr<ServiceInitializeState> initialize_state_;
   std::shared_ptr<ServiceDestroyState> destroy_state_;
-  std::shared_ptr<ServiceArmMovingState> arm_moving_state_;
-  std::shared_ptr<ServiceWaitCommandState> wait_command_state_;
+  std::shared_ptr<ServiceArmsMovingState> arms_moving_state_;
+  std::shared_ptr<ServiceArmsUpState> arms_up_state_;
+  std::shared_ptr<ServiceArmsDownState> arms_down_state_;
 
   std::shared_ptr<ServiceState> current_state_;
   HumanCharacter human_;

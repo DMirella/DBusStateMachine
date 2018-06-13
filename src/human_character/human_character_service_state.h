@@ -12,55 +12,56 @@ class ServiceState {
   ServiceState(HumanCharacterServiceImpl* human_service) : human_service_(human_service) {}
   virtual ~ServiceState() {}
   
-  virtual void LeftArmUp(HumanCharacterServiceImpl::ArmUpReply_t _reply) = 0;
-  virtual void RightArmUp(HumanCharacterServiceImpl::ArmUpReply_t _reply) = 0;
-  virtual void LeftArmDown(HumanCharacterServiceImpl::ArmDownReply_t _reply) = 0;
-  virtual void RightArmDown(HumanCharacterServiceImpl::ArmDownReply_t _reply) = 0;
+  virtual void ArmsUp(HumanCharacterServiceImpl::ArmsUpReply_t reply) = 0;
+  virtual void ArmsDown(HumanCharacterServiceImpl::ArmsDownReply_t reply) = 0;
  protected:
-  HumanCharacterServiceImpl* human_service_;
+  HumanCharacterServiceImpl* human_service_;  // not deleted
 };
 
 class ServiceInitializeState : public ServiceState {
  public:
   ServiceInitializeState(HumanCharacterServiceImpl* human_service) : ServiceState(human_service) {}
   // ServiceState
-  virtual void LeftArmUp(HumanCharacterServiceImpl::ArmUpReply_t _reply) override { _reply("Skipped, service not initialized, yet."); }
-  virtual void RightArmUp(HumanCharacterServiceImpl::ArmUpReply_t _reply) override { _reply("Skipped, service not initialized, yet."); }
-  virtual void LeftArmDown(HumanCharacterServiceImpl::ArmDownReply_t _reply) override { _reply("Skipped, service not initialized, yet."); }
-  virtual void RightArmDown(HumanCharacterServiceImpl::ArmDownReply_t _reply) override { _reply("Skipped, service not initialized, yet."); }
+  virtual void ArmsUp(HumanCharacterServiceImpl::ArmsUpReply_t reply) { reply("Skipped, service not initializated."); }
+  virtual void ArmsDown(HumanCharacterServiceImpl::ArmsDownReply_t reply) { reply("Skipped, service not initializated."); }
 };
 
 class ServiceDestroyState : public ServiceState {
  public:
   ServiceDestroyState(HumanCharacterServiceImpl* human_service) : ServiceState(human_service) {}
   // ServiceState
-  virtual void LeftArmUp(HumanCharacterServiceImpl::ArmUpReply_t _reply) override { _reply("Skipped, service finishing work."); }
-  virtual void RightArmUp(HumanCharacterServiceImpl::ArmUpReply_t _reply) override { _reply("Skipped, service finishing work."); }
-  virtual void LeftArmDown(HumanCharacterServiceImpl::ArmDownReply_t _reply) override { _reply("Skipped, service finishing work."); }
-  virtual void RightArmDown(HumanCharacterServiceImpl::ArmDownReply_t _reply) override { _reply("Skipped, service finishing work."); }
+  virtual void ArmsUp(HumanCharacterServiceImpl::ArmsUpReply_t reply) { reply("Skipped, service destroying."); }
+  virtual void ArmsDown(HumanCharacterServiceImpl::ArmsDownReply_t reply) { reply("Skipped, service destroying."); }
 };
 
-class ServiceArmMovingState : public ServiceState {
+class ServiceArmsMovingState : public ServiceState {
  public:
-  ServiceArmMovingState(HumanCharacterServiceImpl* human_service) : ServiceState(human_service) {}
+  ServiceArmsMovingState(HumanCharacterServiceImpl* human_service) : ServiceState(human_service) {}
   // ServiceState
-  virtual void LeftArmUp(HumanCharacterServiceImpl::ArmUpReply_t _reply) override { _reply("Skipped, arm always moving."); }
-  virtual void RightArmUp(HumanCharacterServiceImpl::ArmUpReply_t _reply) override { _reply("Skipped, arm always moving."); }
-  virtual void LeftArmDown(HumanCharacterServiceImpl::ArmDownReply_t _reply) override { _reply("Skipped, arm always moving."); }
-  virtual void RightArmDown(HumanCharacterServiceImpl::ArmDownReply_t _reply) override { _reply("Skipped, arm always moving."); }
+  virtual void ArmsUp(HumanCharacterServiceImpl::ArmsUpReply_t reply) { reply("Skipped, arms already moving."); }
+  virtual void ArmsDown(HumanCharacterServiceImpl::ArmsDownReply_t reply) { reply("Skipped, arms already moving."); }
 };
 
-class ServiceWaitCommandState : public ServiceState {
+class ServiceArmsUpState : public ServiceState {
  public:
-  ServiceWaitCommandState(HumanCharacterServiceImpl* human_service) : ServiceState(human_service) {}
-  ~ServiceWaitCommandState();
+  ServiceArmsUpState(HumanCharacterServiceImpl* human_service) : ServiceState(human_service) {}
+  ~ServiceArmsUpState();
   // ServiceState
-  virtual void LeftArmUp(HumanCharacterServiceImpl::ArmUpReply_t _reply) override;
-  virtual void RightArmUp(HumanCharacterServiceImpl::ArmUpReply_t _reply) override;
-  virtual void LeftArmDown(HumanCharacterServiceImpl::ArmDownReply_t _reply) override;
-  virtual void RightArmDown(HumanCharacterServiceImpl::ArmDownReply_t _reply) override;
+  virtual void ArmsUp(HumanCharacterServiceImpl::ArmsUpReply_t reply);
+  virtual void ArmsDown(HumanCharacterServiceImpl::ArmsDownReply_t reply);
  private:
-  std::thread arm_moving_thread_;
+  std::thread arms_moving_thread_;
+};
+
+class ServiceArmsDownState : public ServiceState {
+ public:
+  ServiceArmsDownState(HumanCharacterServiceImpl* human_service) : ServiceState(human_service) {}
+  ~ServiceArmsDownState();
+  // ServiceState
+  virtual void ArmsUp(HumanCharacterServiceImpl::ArmsUpReply_t reply);
+  virtual void ArmsDown(HumanCharacterServiceImpl::ArmsDownReply_t reply);
+ private:
+  std::thread arms_moving_thread_;
 };
 }  // DBusStateMachine
 

@@ -4,8 +4,6 @@
 #include <string>
 #include <vector>
 
-#include "animation.h"
-
 namespace DBusStateMachine {
 enum Arm {LEFT, RIGHT};
 

@@ -40,17 +40,16 @@ public:
 
 
     /**
-     * Calls ArmUp with synchronous semantics.
+     * Calls ArmsUp with synchronous semantics.
      *
-    * All const parameters are input parameters to this method.
     * All non-const parameters will be filled with the returned values.
      * The CallStatus will be filled when the method returns and indicate either
      * "SUCCESS" or which type of error has occurred. In case of an error, ONLY the CallStatus
      * will be set.
      */
-    virtual void ArmUp(const HumanCharacterService::Arm &_arm, CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info = nullptr);
+    virtual void ArmsUp(CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info = nullptr);
     /**
-     * Calls ArmUp with asynchronous semantics.
+     * Calls ArmsUp with asynchronous semantics.
      *
      * The provided callback will be called when the reply to this call arrives or
      * an error occurs during the call. The CallStatus will indicate either "SUCCESS"
@@ -59,19 +58,18 @@ public:
      * The std::future returned by this method will be fulfilled at arrival of the reply.
      * It will provide the same value for CallStatus as will be handed to the callback.
      */
-    virtual std::future<CommonAPI::CallStatus> ArmUpAsync(const HumanCharacterService::Arm &_arm, ArmUpAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
+    virtual std::future<CommonAPI::CallStatus> ArmsUpAsync(ArmsUpAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
     /**
-     * Calls ArmDown with synchronous semantics.
+     * Calls ArmsDown with synchronous semantics.
      *
-    * All const parameters are input parameters to this method.
     * All non-const parameters will be filled with the returned values.
      * The CallStatus will be filled when the method returns and indicate either
      * "SUCCESS" or which type of error has occurred. In case of an error, ONLY the CallStatus
      * will be set.
      */
-    virtual void ArmDown(const HumanCharacterService::Arm &_arm, CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info = nullptr);
+    virtual void ArmsDown(CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info = nullptr);
     /**
-     * Calls ArmDown with asynchronous semantics.
+     * Calls ArmsDown with asynchronous semantics.
      *
      * The provided callback will be called when the reply to this call arrives or
      * an error occurs during the call. The CallStatus will indicate either "SUCCESS"
@@ -80,7 +78,7 @@ public:
      * The std::future returned by this method will be fulfilled at arrival of the reply.
      * It will provide the same value for CallStatus as will be handed to the callback.
      */
-    virtual std::future<CommonAPI::CallStatus> ArmDownAsync(const HumanCharacterService::Arm &_arm, ArmDownAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
+    virtual std::future<CommonAPI::CallStatus> ArmsDownAsync(ArmsDownAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
 
 
     /**
@@ -131,44 +129,22 @@ HumanCharacterServiceProxy<_AttributeExtensions...>::~HumanCharacterServiceProxy
 }
 
 template <typename ... _AttributeExtensions>
-void HumanCharacterServiceProxy<_AttributeExtensions...>::ArmUp(const HumanCharacterService::Arm &_arm, CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info) {
-    if (!_arm.validate()) {
-        _internalCallStatus = CommonAPI::CallStatus::INVALID_VALUE;
-        return;
-    }
-    delegate_->ArmUp(_arm, _internalCallStatus, _result, _info);
+void HumanCharacterServiceProxy<_AttributeExtensions...>::ArmsUp(CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info) {
+    delegate_->ArmsUp(_internalCallStatus, _result, _info);
 }
 
 template <typename ... _AttributeExtensions>
-std::future<CommonAPI::CallStatus> HumanCharacterServiceProxy<_AttributeExtensions...>::ArmUpAsync(const HumanCharacterService::Arm &_arm, ArmUpAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
-    if (!_arm.validate()) {
-        std::string result = "";
-        _callback(CommonAPI::CallStatus::INVALID_VALUE, result);
-        std::promise<CommonAPI::CallStatus> promise;
-        promise.set_value(CommonAPI::CallStatus::INVALID_VALUE);
-        return promise.get_future();
-    }
-    return delegate_->ArmUpAsync(_arm, _callback, _info);
+std::future<CommonAPI::CallStatus> HumanCharacterServiceProxy<_AttributeExtensions...>::ArmsUpAsync(ArmsUpAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
+    return delegate_->ArmsUpAsync(_callback, _info);
 }
 template <typename ... _AttributeExtensions>
-void HumanCharacterServiceProxy<_AttributeExtensions...>::ArmDown(const HumanCharacterService::Arm &_arm, CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info) {
-    if (!_arm.validate()) {
-        _internalCallStatus = CommonAPI::CallStatus::INVALID_VALUE;
-        return;
-    }
-    delegate_->ArmDown(_arm, _internalCallStatus, _result, _info);
+void HumanCharacterServiceProxy<_AttributeExtensions...>::ArmsDown(CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info) {
+    delegate_->ArmsDown(_internalCallStatus, _result, _info);
 }
 
 template <typename ... _AttributeExtensions>
-std::future<CommonAPI::CallStatus> HumanCharacterServiceProxy<_AttributeExtensions...>::ArmDownAsync(const HumanCharacterService::Arm &_arm, ArmDownAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
-    if (!_arm.validate()) {
-        std::string result = "";
-        _callback(CommonAPI::CallStatus::INVALID_VALUE, result);
-        std::promise<CommonAPI::CallStatus> promise;
-        promise.set_value(CommonAPI::CallStatus::INVALID_VALUE);
-        return promise.get_future();
-    }
-    return delegate_->ArmDownAsync(_arm, _callback, _info);
+std::future<CommonAPI::CallStatus> HumanCharacterServiceProxy<_AttributeExtensions...>::ArmsDownAsync(ArmsDownAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
+    return delegate_->ArmsDownAsync(_callback, _info);
 }
 
 template <typename ... _AttributeExtensions>

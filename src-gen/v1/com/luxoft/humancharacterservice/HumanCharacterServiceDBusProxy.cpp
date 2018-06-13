@@ -39,84 +39,72 @@ HumanCharacterServiceDBusProxy::HumanCharacterServiceDBusProxy(
 
 
 
-    void HumanCharacterServiceDBusProxy::ArmUp(const HumanCharacterService::Arm &_arm, CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info) {
-        CommonAPI::Deployable< HumanCharacterService::Arm, CommonAPI::EmptyDeployment> deploy_arm(_arm, static_cast< CommonAPI::EmptyDeployment* >(nullptr));
+    void HumanCharacterServiceDBusProxy::ArmsUp(CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info) {
         CommonAPI::Deployable< std::string, CommonAPI::DBus::StringDeployment> deploy_result(static_cast< CommonAPI::DBus::StringDeployment* >(nullptr));
         CommonAPI::DBus::DBusProxyHelper<
             CommonAPI::DBus::DBusSerializableArguments<
-            CommonAPI::Deployable< HumanCharacterService::Arm, CommonAPI::EmptyDeployment >
             >,
             CommonAPI::DBus::DBusSerializableArguments<
             CommonAPI::Deployable< std::string,CommonAPI::DBus::StringDeployment>
             >
             >::callMethodWithReply(
         *this,
-        "ArmUp",
-        "i",
+        "ArmsUp",
+        "",
 (_info ? _info : &CommonAPI::DBus::defaultCallInfo),
-deploy_arm,
 _internalCallStatus,
 deploy_result);
 _result = deploy_result.getValue();
 }
-    std::future<CommonAPI::CallStatus> HumanCharacterServiceDBusProxy::ArmUpAsync(const HumanCharacterService::Arm &_arm, ArmUpAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
-        CommonAPI::Deployable< HumanCharacterService::Arm, CommonAPI::EmptyDeployment> deploy_arm(_arm, static_cast< CommonAPI::EmptyDeployment* >(nullptr));
+    std::future<CommonAPI::CallStatus> HumanCharacterServiceDBusProxy::ArmsUpAsync(ArmsUpAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
         CommonAPI::Deployable< std::string, CommonAPI::DBus::StringDeployment> deploy_result(static_cast< CommonAPI::DBus::StringDeployment* >(nullptr));
         return CommonAPI::DBus::DBusProxyHelper<
             CommonAPI::DBus::DBusSerializableArguments<
-            CommonAPI::Deployable< HumanCharacterService::Arm, CommonAPI::EmptyDeployment >
             >,
             CommonAPI::DBus::DBusSerializableArguments<
             CommonAPI::Deployable< std::string,CommonAPI::DBus::StringDeployment>
             >
             >::callMethodAsync(
         *this,
-        "ArmUp",
-        "i",
+        "ArmsUp",
+        "",
         (_info ? _info : &CommonAPI::DBus::defaultCallInfo),
-        deploy_arm,
         [_callback] (CommonAPI::CallStatus _internalCallStatus, CommonAPI::Deployable< std::string, CommonAPI::DBus::StringDeployment > _result) {
             if (_callback)
                 _callback(_internalCallStatus, _result.getValue());
         },
         std::make_tuple(deploy_result));
     }
-    void HumanCharacterServiceDBusProxy::ArmDown(const HumanCharacterService::Arm &_arm, CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info) {
-        CommonAPI::Deployable< HumanCharacterService::Arm, CommonAPI::EmptyDeployment> deploy_arm(_arm, static_cast< CommonAPI::EmptyDeployment* >(nullptr));
+    void HumanCharacterServiceDBusProxy::ArmsDown(CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info) {
         CommonAPI::Deployable< std::string, CommonAPI::DBus::StringDeployment> deploy_result(static_cast< CommonAPI::DBus::StringDeployment* >(nullptr));
         CommonAPI::DBus::DBusProxyHelper<
             CommonAPI::DBus::DBusSerializableArguments<
-            CommonAPI::Deployable< HumanCharacterService::Arm, CommonAPI::EmptyDeployment >
             >,
             CommonAPI::DBus::DBusSerializableArguments<
             CommonAPI::Deployable< std::string,CommonAPI::DBus::StringDeployment>
             >
             >::callMethodWithReply(
         *this,
-        "ArmDown",
-        "i",
+        "ArmsDown",
+        "",
 (_info ? _info : &CommonAPI::DBus::defaultCallInfo),
-deploy_arm,
 _internalCallStatus,
 deploy_result);
 _result = deploy_result.getValue();
 }
-    std::future<CommonAPI::CallStatus> HumanCharacterServiceDBusProxy::ArmDownAsync(const HumanCharacterService::Arm &_arm, ArmDownAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
-        CommonAPI::Deployable< HumanCharacterService::Arm, CommonAPI::EmptyDeployment> deploy_arm(_arm, static_cast< CommonAPI::EmptyDeployment* >(nullptr));
+    std::future<CommonAPI::CallStatus> HumanCharacterServiceDBusProxy::ArmsDownAsync(ArmsDownAsyncCallback _callback, const CommonAPI::CallInfo *_info) {
         CommonAPI::Deployable< std::string, CommonAPI::DBus::StringDeployment> deploy_result(static_cast< CommonAPI::DBus::StringDeployment* >(nullptr));
         return CommonAPI::DBus::DBusProxyHelper<
             CommonAPI::DBus::DBusSerializableArguments<
-            CommonAPI::Deployable< HumanCharacterService::Arm, CommonAPI::EmptyDeployment >
             >,
             CommonAPI::DBus::DBusSerializableArguments<
             CommonAPI::Deployable< std::string,CommonAPI::DBus::StringDeployment>
             >
             >::callMethodAsync(
         *this,
-        "ArmDown",
-        "i",
+        "ArmsDown",
+        "",
         (_info ? _info : &CommonAPI::DBus::defaultCallInfo),
-        deploy_arm,
         [_callback] (CommonAPI::CallStatus _internalCallStatus, CommonAPI::Deployable< std::string, CommonAPI::DBus::StringDeployment > _result) {
             if (_callback)
                 _callback(_internalCallStatus, _result.getValue());

@@ -31,16 +31,14 @@ HumanCharacterServiceStubRemoteEvent* HumanCharacterServiceStubDefault::initStub
 }
 
 
-void HumanCharacterServiceStubDefault::ArmUp(const std::shared_ptr<CommonAPI::ClientId> _client, HumanCharacterService::Arm _arm, ArmUpReply_t _reply) {
+void HumanCharacterServiceStubDefault::ArmsUp(const std::shared_ptr<CommonAPI::ClientId> _client, ArmsUpReply_t _reply) {
     (void)_client;
-    (void)_arm;
     std::string result = "";
     _reply(result);
 }
 
-void HumanCharacterServiceStubDefault::ArmDown(const std::shared_ptr<CommonAPI::ClientId> _client, HumanCharacterService::Arm _arm, ArmDownReply_t _reply) {
+void HumanCharacterServiceStubDefault::ArmsDown(const std::shared_ptr<CommonAPI::ClientId> _client, ArmsDownReply_t _reply) {
     (void)_client;
-    (void)_arm;
     std::string result = "";
     _reply(result);
 }

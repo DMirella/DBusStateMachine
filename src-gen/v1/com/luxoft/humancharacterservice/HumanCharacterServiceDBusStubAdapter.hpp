@@ -12,7 +12,6 @@
 
 #include <v1/com/luxoft/humancharacterservice/HumanCharacterServiceStub.hpp>
 #include "v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp"
-#include <v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp>
 
 #if !defined (COMMONAPI_INTERNAL_COMPILATION)
 #define COMMONAPI_INTERNAL_COMPILATION
@@ -63,22 +62,22 @@ public:
     
     static CommonAPI::DBus::DBusMethodWithReplyStubDispatcher<
         ::v1::com::luxoft::humancharacterservice::HumanCharacterServiceStub,
-        std::tuple< HumanCharacterService::Arm>,
+        std::tuple< >,
         std::tuple< std::string>,
-        std::tuple< CommonAPI::EmptyDeployment>,
+        std::tuple< >,
         std::tuple< CommonAPI::DBus::StringDeployment>
     
-        > armUpStubDispatcher;
+        > armsUpStubDispatcher;
 
     
     static CommonAPI::DBus::DBusMethodWithReplyStubDispatcher<
         ::v1::com::luxoft::humancharacterservice::HumanCharacterServiceStub,
-        std::tuple< HumanCharacterService::Arm>,
+        std::tuple< >,
         std::tuple< std::string>,
-        std::tuple< CommonAPI::EmptyDeployment>,
+        std::tuple< >,
         std::tuple< CommonAPI::DBus::StringDeployment>
     
-        > armDownStubDispatcher;
+        > armsDownStubDispatcher;
 
     HumanCharacterServiceDBusStubAdapterInternal(
         const CommonAPI::DBus::DBusAddress &_address,
@@ -86,8 +85,8 @@ public:
         const std::shared_ptr<_Stub> &_stub)
     : CommonAPI::DBus::DBusStubAdapter(_address, _connection,false),
       HumanCharacterServiceDBusStubAdapterHelper(_address, _connection, false, _stub) {
-        HumanCharacterServiceDBusStubAdapterHelper::addStubDispatcher({ "ArmUp", "i" }, &armUpStubDispatcher);
-        HumanCharacterServiceDBusStubAdapterHelper::addStubDispatcher({ "ArmDown", "i" }, &armDownStubDispatcher);
+        HumanCharacterServiceDBusStubAdapterHelper::addStubDispatcher({ "ArmsUp", "" }, &armsUpStubDispatcher);
+        HumanCharacterServiceDBusStubAdapterHelper::addStubDispatcher({ "ArmsDown", "" }, &armsDownStubDispatcher);
         HumanCharacterServiceDBusStubAdapterHelper::addStubDispatcher({ "getInterfaceVersion", "" }, &getHumanCharacterServiceInterfaceVersionStubDispatcher);
     }
 
@@ -97,12 +96,10 @@ protected:
             "<method name=\"getInterfaceVersion\">\n"
                 "<arg name=\"value\" type=\"uu\" direction=\"out\" />"
             "</method>\n"
-            "<method name=\"ArmUp\">\n"
-            "<arg name=\"_arm\" type=\"i\" direction=\"in\" />\n"
+            "<method name=\"ArmsUp\">\n"
             "<arg name=\"_result\" type=\"s\" direction=\"out\" />\n"
             "</method>\n"
-            "<method name=\"ArmDown\">\n"
-            "<arg name=\"_arm\" type=\"i\" direction=\"in\" />\n"
+            "<method name=\"ArmsDown\">\n"
             "<arg name=\"_result\" type=\"s\" direction=\"out\" />\n"
             "</method>\n"
             ;
@@ -123,28 +120,28 @@ CommonAPI::DBus::DBusGetAttributeStubDispatcher<
 template <typename _Stub, typename... _Stubs>
 CommonAPI::DBus::DBusMethodWithReplyStubDispatcher<
     ::v1::com::luxoft::humancharacterservice::HumanCharacterServiceStub,
-    std::tuple< HumanCharacterService::Arm>,
+    std::tuple< >,
     std::tuple< std::string>,
-    std::tuple< CommonAPI::EmptyDeployment>,
+    std::tuple< >,
     std::tuple< CommonAPI::DBus::StringDeployment>
 
-    > HumanCharacterServiceDBusStubAdapterInternal<_Stub, _Stubs...>::armUpStubDispatcher(
-    &HumanCharacterServiceStub::ArmUp, "s",
-    std::make_tuple(static_cast< CommonAPI::EmptyDeployment* >(nullptr)),
+    > HumanCharacterServiceDBusStubAdapterInternal<_Stub, _Stubs...>::armsUpStubDispatcher(
+    &HumanCharacterServiceStub::ArmsUp, "s",
+    std::make_tuple(),
     std::make_tuple(static_cast< CommonAPI::DBus::StringDeployment* >(nullptr)));
 
 
 template <typename _Stub, typename... _Stubs>
 CommonAPI::DBus::DBusMethodWithReplyStubDispatcher<
     ::v1::com::luxoft::humancharacterservice::HumanCharacterServiceStub,
-    std::tuple< HumanCharacterService::Arm>,
+    std::tuple< >,
     std::tuple< std::string>,
-    std::tuple< CommonAPI::EmptyDeployment>,
+    std::tuple< >,
     std::tuple< CommonAPI::DBus::StringDeployment>
 
-    > HumanCharacterServiceDBusStubAdapterInternal<_Stub, _Stubs...>::armDownStubDispatcher(
-    &HumanCharacterServiceStub::ArmDown, "s",
-    std::make_tuple(static_cast< CommonAPI::EmptyDeployment* >(nullptr)),
+    > HumanCharacterServiceDBusStubAdapterInternal<_Stub, _Stubs...>::armsDownStubDispatcher(
+    &HumanCharacterServiceStub::ArmsDown, "s",
+    std::make_tuple(),
     std::make_tuple(static_cast< CommonAPI::DBus::StringDeployment* >(nullptr)));
 
 

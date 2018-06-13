@@ -51,21 +51,17 @@ bool HumanCharacterServiceClient::Initialize() {
   return true;
 }
 
-void HumanCharacterServiceClient::ArmUp(Arm arm) {
-  v1::com::luxoft::humancharacterservice::HumanCharacterService::Arm service_arm 
-      = (arm == Arm::LEFT)? v1::com::luxoft::humancharacterservice::HumanCharacterService::Arm::LEFT 
-                          : v1::com::luxoft::humancharacterservice::HumanCharacterService::Arm::RIGHT;
-  service_proxy_->ArmUpAsync(service_arm, [](CommonAPI::CallStatus status, const std::string& reply) {
-			       std::cout << "Service reply: " << reply << std::endl;
-                             });
+void HumanCharacterServiceClient::ArmsUp() {
+  CommonAPI::CallStatus status;
+  std::string reply;
+  service_proxy_->ArmsUp(status, reply);
+  std::cout << reply << std::endl;
 }
 
-void HumanCharacterServiceClient::ArmDown(Arm arm) {
-  v1::com::luxoft::humancharacterservice::HumanCharacterService::Arm service_arm 
-      = (arm == Arm::LEFT)? v1::com::luxoft::humancharacterservice::HumanCharacterService::Arm::LEFT 
-                          : v1::com::luxoft::humancharacterservice::HumanCharacterService::Arm::RIGHT;
-  service_proxy_->ArmDownAsync(service_arm, [](CommonAPI::CallStatus status, const std::string& reply) {
-			       std::cout << "Service reply: " << reply << std::endl;
-                             });
+void HumanCharacterServiceClient::ArmsDown() {
+  CommonAPI::CallStatus status;
+  std::string reply;
+  service_proxy_->ArmsDown(status, reply);
+  std::cout << reply << std::endl;
 }
 }  // DBusStateMachine

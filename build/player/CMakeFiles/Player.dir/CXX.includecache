@@ -7,13 +7,7 @@
 #IncludeRegexTransform: 
 
 /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterService.hpp
-CommonAPI/InputStream.hpp
--
-CommonAPI/OutputStream.hpp
--
 CommonAPI/Types.hpp
--
-cstdint
 -
 
 /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.cpp
@@ -21,8 +15,6 @@ HumanCharacterServiceDBusDeployment.hpp
 /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp
 
 /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp
-v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp
--
 CommonAPI/DBus/DBusDeployment.hpp
 -
 
@@ -52,12 +44,6 @@ v1/com/luxoft/humancharacterservice/HumanCharacterServiceProxyBase.hpp
 
 /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceProxyBase.hpp
 v1/com/luxoft/humancharacterservice/HumanCharacterService.hpp
--
-CommonAPI/InputStream.hpp
--
-CommonAPI/OutputStream.hpp
--
-cstdint
 -
 vector
 -

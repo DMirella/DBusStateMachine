@@ -29,20 +29,14 @@ int main(){
   
   std::cout << "Service was found, start to work...\n";
   while (true) {
-    DBusStateMachine::HumanCharacterServiceClient::Arm arm 
-        = static_cast<DBusStateMachine::HumanCharacterServiceClient::Arm>(rand() % 2);
     switch (rand() % 2) {
      case 0:
-      std::cout << "Try to moving up " 
-          << ((arm == DBusStateMachine::HumanCharacterServiceClient::Arm::LEFT)? "left" : "right")
-          << " arm\n";
-      service_client.ArmUp(arm);
+      std::cout << "Try to moving arms up\n";
+      service_client.ArmsUp();
       break;
      case 1:
-      std::cout << "Try to moving down " 
-          << ((arm == DBusStateMachine::HumanCharacterServiceClient::Arm::LEFT)? "left" : "right")
-          << " arm\n";
-      service_client.ArmDown(arm);
+      std::cout << "Try to moving arms down\n";
+      service_client.ArmsDown();
       break;
     }
     usleep(kTimeoutSleepForTimeNs);

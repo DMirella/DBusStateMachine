@@ -18,9 +18,6 @@
 #define COMMONAPI_INTERNAL_COMPILATION
 #endif
 
-#include <CommonAPI/InputStream.hpp>
-#include <CommonAPI/OutputStream.hpp>
-#include <cstdint>
 #include <vector>
 
 #include <CommonAPI/Proxy.hpp>
@@ -38,15 +35,15 @@ class HumanCharacterServiceProxyBase
     : virtual public CommonAPI::Proxy {
 public:
 
-    typedef std::function<void(const CommonAPI::CallStatus&, const std::string&)> ArmUpAsyncCallback;
-    typedef std::function<void(const CommonAPI::CallStatus&, const std::string&)> ArmDownAsyncCallback;
+    typedef std::function<void(const CommonAPI::CallStatus&, const std::string&)> ArmsUpAsyncCallback;
+    typedef std::function<void(const CommonAPI::CallStatus&, const std::string&)> ArmsDownAsyncCallback;
 
 
 
-    virtual void ArmUp(const HumanCharacterService::Arm &_arm, CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
-    virtual std::future<CommonAPI::CallStatus> ArmUpAsync(const HumanCharacterService::Arm &_arm, ArmUpAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
-    virtual void ArmDown(const HumanCharacterService::Arm &_arm, CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
-    virtual std::future<CommonAPI::CallStatus> ArmDownAsync(const HumanCharacterService::Arm &_arm, ArmDownAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual void ArmsUp(CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual std::future<CommonAPI::CallStatus> ArmsUpAsync(ArmsUpAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual void ArmsDown(CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual std::future<CommonAPI::CallStatus> ArmsDownAsync(ArmsDownAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
 };
 
 } // namespace humancharacterservice

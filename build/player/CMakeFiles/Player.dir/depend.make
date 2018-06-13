@@ -95,22 +95,13 @@ player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/wor
 player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/CommonAPI.hpp
 player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Config.hpp
 player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/ContainerUtils.hpp
-player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Deployable.hpp
-player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Deployment.hpp
-player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Enumeration.hpp
 player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Event.hpp
 player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Export.hpp
 player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Factory.hpp
-player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/InputStream.hpp
-player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Logger.hpp
-player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/LoggerImpl.hpp
 player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/MainLoopContext.hpp
-player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/OutputStream.hpp
 player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Proxy.hpp
 player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Runtime.hpp
-player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Struct.hpp
 player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
-player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Variant.hpp
 player/CMakeFiles/Player.dir/human_character_service_client.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
 
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterService.hpp
@@ -126,21 +117,12 @@ player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/inc
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/CommonAPI.hpp
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Config.hpp
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/ContainerUtils.hpp
-player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Deployable.hpp
-player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Deployment.hpp
-player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Enumeration.hpp
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Event.hpp
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Export.hpp
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Factory.hpp
-player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/InputStream.hpp
-player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Logger.hpp
-player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/LoggerImpl.hpp
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/MainLoopContext.hpp
-player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/OutputStream.hpp
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Proxy.hpp
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Runtime.hpp
-player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Struct.hpp
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
-player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Variant.hpp
 player/CMakeFiles/Player.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
 

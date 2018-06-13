@@ -17,10 +17,7 @@
 #define COMMONAPI_INTERNAL_COMPILATION
 #endif
 
-#include <CommonAPI/InputStream.hpp>
-#include <CommonAPI/OutputStream.hpp>
 #include <CommonAPI/Types.hpp>
-#include <cstdint>
 
 #undef COMMONAPI_INTERNAL_COMPILATION
 
@@ -35,42 +32,6 @@ public:
 
     static inline const char* getInterface();
     static inline CommonAPI::Version getInterfaceVersion();
-    
-    struct Arm : CommonAPI::Enumeration< int32_t> {
-        enum Literal : int32_t {
-            LEFT = 0,
-            RIGHT = 1
-        };
-    
-        Arm()
-            : CommonAPI::Enumeration< int32_t>(static_cast< int32_t>(Literal::LEFT)) {}
-        Arm(Literal _literal)
-            : CommonAPI::Enumeration< int32_t>(static_cast< int32_t>(_literal)) {}
-    
-        inline bool validate() const {
-            switch (value_) {
-                case static_cast< int32_t>(Literal::LEFT):
-                case static_cast< int32_t>(Literal::RIGHT):
-                return true;
-            default:
-                return false;
-            }
-        }
-    
-        inline bool operator==(const Arm &_other) const { return (value_ == _other.value_); }
-        inline bool operator!=(const Arm &_other) const { return (value_ != _other.value_); }
-        inline bool operator<=(const Arm &_other) const { return (value_ <= _other.value_); }
-        inline bool operator>=(const Arm &_other) const { return (value_ >= _other.value_); }
-        inline bool operator<(const Arm &_other) const { return (value_ < _other.value_); }
-        inline bool operator>(const Arm &_other) const { return (value_ > _other.value_); }
-    
-        inline bool operator==(const Literal &_value) const { return (value_ == static_cast< int32_t>(_value)); }
-        inline bool operator!=(const Literal &_value) const { return (value_ != static_cast< int32_t>(_value)); }
-        inline bool operator<=(const Literal &_value) const { return (value_ <= static_cast< int32_t>(_value)); }
-        inline bool operator>=(const Literal &_value) const { return (value_ >= static_cast< int32_t>(_value)); }
-        inline bool operator<(const Literal &_value) const { return (value_ < static_cast< int32_t>(_value)); }
-        inline bool operator>(const Literal &_value) const { return (value_ > static_cast< int32_t>(_value)); }
-    };
 };
 
 const char* HumanCharacterService::getInterface() {

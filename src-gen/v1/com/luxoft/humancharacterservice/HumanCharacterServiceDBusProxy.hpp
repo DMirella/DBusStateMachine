@@ -55,10 +55,10 @@ public:
 
 
 
-    virtual void ArmUp(const HumanCharacterService::Arm &_arm, CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info);
-    virtual std::future<CommonAPI::CallStatus> ArmUpAsync(const HumanCharacterService::Arm &_arm, ArmUpAsyncCallback _callback, const CommonAPI::CallInfo *_info);
-    virtual void ArmDown(const HumanCharacterService::Arm &_arm, CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info);
-    virtual std::future<CommonAPI::CallStatus> ArmDownAsync(const HumanCharacterService::Arm &_arm, ArmDownAsyncCallback _callback, const CommonAPI::CallInfo *_info);
+    virtual void ArmsUp(CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info);
+    virtual std::future<CommonAPI::CallStatus> ArmsUpAsync(ArmsUpAsyncCallback _callback, const CommonAPI::CallInfo *_info);
+    virtual void ArmsDown(CommonAPI::CallStatus &_internalCallStatus, std::string &_result, const CommonAPI::CallInfo *_info);
+    virtual std::future<CommonAPI::CallStatus> ArmsDownAsync(ArmsDownAsyncCallback _callback, const CommonAPI::CallInfo *_info);
 
 
     virtual void getOwnVersion(uint16_t& ownVersionMajor, uint16_t& ownVersionMinor) const;

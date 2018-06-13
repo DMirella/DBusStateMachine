@@ -11,7 +11,6 @@
 #ifndef V1_COM_LUXOFT_HUMANCHARACTERSERVICE_Human_Character_Service_DBUS_DEPLOYMENT_HPP_
 #define V1_COM_LUXOFT_HUMANCHARACTERSERVICE_Human_Character_Service_DBUS_DEPLOYMENT_HPP_
 
-#include <v1/com/luxoft/humancharacterservice/HumanCharacterServiceDBusDeployment.hpp>
 
 
 #if !defined (COMMONAPI_INTERNAL_COMPILATION)

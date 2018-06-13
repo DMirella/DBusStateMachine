@@ -53,8 +53,8 @@ public:
     COMMONAPI_EXPORT const CommonAPI::Version& getInterfaceVersion(std::shared_ptr<CommonAPI::ClientId> _client);
 
 
-    COMMONAPI_EXPORT virtual void ArmUp(const std::shared_ptr<CommonAPI::ClientId> _client, HumanCharacterService::Arm _arm, ArmUpReply_t _reply);
-    COMMONAPI_EXPORT virtual void ArmDown(const std::shared_ptr<CommonAPI::ClientId> _client, HumanCharacterService::Arm _arm, ArmDownReply_t _reply);
+    COMMONAPI_EXPORT virtual void ArmsUp(const std::shared_ptr<CommonAPI::ClientId> _client, ArmsUpReply_t _reply);
+    COMMONAPI_EXPORT virtual void ArmsDown(const std::shared_ptr<CommonAPI::ClientId> _client, ArmsDownReply_t _reply);
 
 
     

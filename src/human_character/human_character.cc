@@ -46,6 +46,7 @@ bool HumanCharacter::Init() {
 }
 
 void HumanCharacter::ArmUp(Arm arm) {
+  //std::cout << "HumanCharacter::ArmUp\n";
   if (arm == Arm::LEFT) {
     animation_left_arm_->PlayUpArmAnimation();
   } else { 
@@ -54,6 +55,7 @@ void HumanCharacter::ArmUp(Arm arm) {
 }
 
 void HumanCharacter::ArmDown(Arm arm) {
+  //std::cout << "HumanCharacter::ArmDown\n";
   if (arm == Arm::LEFT) {
     animation_left_arm_->PlayDownArmAnimation();
   } else { 

@@ -22,9 +22,6 @@
 #define COMMONAPI_INTERNAL_COMPILATION
 #endif
 
-#include <CommonAPI/InputStream.hpp>
-#include <CommonAPI/OutputStream.hpp>
-#include <cstdint>
 #include <vector>
 
 
@@ -90,18 +87,18 @@ class HumanCharacterServiceStub
     : public virtual CommonAPI::Stub<HumanCharacterServiceStubAdapter, HumanCharacterServiceStubRemoteEvent>
 {
 public:
-    typedef std::function<void (std::string _result)>ArmUpReply_t;
-    typedef std::function<void (std::string _result)>ArmDownReply_t;
+    typedef std::function<void (std::string _result)>ArmsUpReply_t;
+    typedef std::function<void (std::string _result)>ArmsDownReply_t;
 
     virtual ~HumanCharacterServiceStub() {}
     virtual const CommonAPI::Version& getInterfaceVersion(std::shared_ptr<CommonAPI::ClientId> clientId) = 0;
     void lockInterfaceVersionAttribute(bool _lockAccess) { static_cast<void>(_lockAccess); }
 
 
-    /// This is the method that will be called on remote calls on the method ArmUp.
-    virtual void ArmUp(const std::shared_ptr<CommonAPI::ClientId> _client, HumanCharacterService::Arm _arm, ArmUpReply_t _reply) = 0;
-    /// This is the method that will be called on remote calls on the method ArmDown.
-    virtual void ArmDown(const std::shared_ptr<CommonAPI::ClientId> _client, HumanCharacterService::Arm _arm, ArmDownReply_t _reply) = 0;
+    /// This is the method that will be called on remote calls on the method ArmsUp.
+    virtual void ArmsUp(const std::shared_ptr<CommonAPI::ClientId> _client, ArmsUpReply_t _reply) = 0;
+    /// This is the method that will be called on remote calls on the method ArmsDown.
+    virtual void ArmsDown(const std::shared_ptr<CommonAPI::ClientId> _client, ArmsDownReply_t _reply) = 0;
 
     
     using CommonAPI::Stub<HumanCharacterServiceStubAdapter, HumanCharacterServiceStubRemoteEvent>::initStubAdapter;
