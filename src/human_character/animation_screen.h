@@ -17,7 +17,6 @@ class AnimationScreen {
   AnimationScreen& operator=(AnimationScreen&& service) = delete;
   
   static AnimationScreen& GetInstance();
-  
   void set_main_animation(const std::shared_ptr<Animation>& animation);
  private:
   AnimationScreen();
