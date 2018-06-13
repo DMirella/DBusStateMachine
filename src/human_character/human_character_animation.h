@@ -1,12 +1,12 @@
 #ifndef DBUSSTATEMACHINE_SRC_CHARACTER_HUMAN_CHARACTER_ANIMATION_H_
 #define DBUSSTATEMACHINE_SRC_CHARACTER_HUMAN_CHARACTER_ANIMATION_H_
 
-#include "animation.h"
-#include "character_animation.h"
-#include "human_character_snaps.h"
+#include "human_character_constants.h"
+#include "snaps_animation.h"
 
 namespace DBusStateMachine {
-class ArmHumanCharacterAnimation : public CharacterAnimation {
+enum Arm;
+class ArmHumanCharacterAnimation : public SnapsAnimation {
  public:
   ArmHumanCharacterAnimation(const ArmHumanCharacterAnimation& animation) = delete;
   ArmHumanCharacterAnimation(ArmHumanCharacterAnimation&& animation) = delete;
@@ -21,7 +21,7 @@ class ArmHumanCharacterAnimation : public CharacterAnimation {
   void PlayDownArmAnimation();
 };
 
-class LegHumanCharacterAnimation : public CharacterAnimation {
+class LegHumanCharacterAnimation : public SnapsAnimation {
  public:
   LegHumanCharacterAnimation(const LegHumanCharacterAnimation& animation) = delete;
   LegHumanCharacterAnimation(LegHumanCharacterAnimation&& animation) = delete;
@@ -33,7 +33,7 @@ class LegHumanCharacterAnimation : public CharacterAnimation {
   ~LegHumanCharacterAnimation() {}
 };
 
-class BodyHumanCharacterAnimation : public CharacterAnimation {
+class BodyHumanCharacterAnimation : public SnapsAnimation {
  public:
   BodyHumanCharacterAnimation(const BodyHumanCharacterAnimation& animation) = delete;
   BodyHumanCharacterAnimation(BodyHumanCharacterAnimation&& animation) = delete;
@@ -45,7 +45,7 @@ class BodyHumanCharacterAnimation : public CharacterAnimation {
   ~BodyHumanCharacterAnimation() {}
 };
 
-class HeadHumanCharacterAnimation : public CharacterAnimation {
+class HeadHumanCharacterAnimation : public SnapsAnimation {
  public:
   HeadHumanCharacterAnimation(const HeadHumanCharacterAnimation& animation) = delete;
   HeadHumanCharacterAnimation(HeadHumanCharacterAnimation&& animation) = delete;

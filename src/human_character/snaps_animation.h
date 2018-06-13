@@ -1,19 +1,19 @@
-#ifndef DBUSSTATEMACHINE_SRC_CHARACTER_CHARACTER_ANIMATION_H_
-#define DBUSSTATEMACHINE_SRC_CHARACTER_CHARACTER_ANIMATION_H_
+#ifndef DBUSSTATEMACHINE_SRC_CHARACTER_SNAPS_ANIMATION_H_
+#define DBUSSTATEMACHINE_SRC_CHARACTER_SNAPS_ANIMATION_H_
 
 #include <vector>
 
 #include "animation.h"
 
 namespace DBusStateMachine {
-class CharacterAnimation : public AnimationObject {
+class SnapsAnimation : public AnimationObject {
  public:
-  virtual ~CharacterAnimation() {}
+  virtual ~SnapsAnimation() {}
   // CharacterAnimation
   virtual Snap MakeSnap() const override { return *current_snap_; }
  protected:
-  CharacterAnimation() : current_snap_(snaps_.begin()) {}
-  CharacterAnimation(int x, int y, int width, int height, const std::vector<Snap>& snaps, int speed)
+  SnapsAnimation() : current_snap_(snaps_.begin()) {}
+  SnapsAnimation(int x, int y, int width, int height, const std::vector<Snap>& snaps, int speed)
     : AnimationObject(x, y, width, height), snaps_(snaps), speed_(speed), current_snap_(snaps_.begin()) {}
 
   std::vector<Snap> snaps_;
@@ -23,4 +23,4 @@ class CharacterAnimation : public AnimationObject {
 };
 }  // DBusStateMachine
 
-#endif  // DBUSSTATEMACHINE_SRC_CHARACTER_CHARACTER_ANIMATION_H_
+#endif  // DBUSSTATEMACHINE_SRC_CHARACTER_SNAPS_ANIMATION_H_

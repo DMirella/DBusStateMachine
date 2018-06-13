@@ -20,9 +20,7 @@ class AnimationScreen {
   
   static AnimationScreen* GetInstance();
   
-  inline void set_main_animation(std::shared_ptr<Animation> animation) { 
-    main_animation_ = animation;
-  }
+  void set_main_animation(const std::shared_ptr<Animation>& animation);
  private:
   AnimationScreen();
   ~AnimationScreen();

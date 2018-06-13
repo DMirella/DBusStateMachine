@@ -96,29 +96,29 @@ human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMac
 
 human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/animation_screen.h
-human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character.cc
 human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
-human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
+human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o: /home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
 
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o: /home/dima/work/DBusStateMachine/src/human_character/animation.h
-human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o: /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.cc
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
-human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o: /home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
 
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterService.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStub.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src/human_character/animation.h
-human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service.cc
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
-human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp
@@ -140,13 +140,13 @@ human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_imp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStub.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src/human_character/animation.h
-human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.cc
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
-human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_impl.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp
@@ -168,13 +168,13 @@ human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_sta
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStub.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src/human_character/animation.h
-human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
-human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp
@@ -192,16 +192,7 @@ human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_sta
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_state.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
 
-human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterService.hpp
-human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStub.hpp
-human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
-human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src/human_character/animation.h
-human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
-human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character.h
-human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service.h
-human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
-human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/DBusStateMachine/src/human_character/main.cc
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
@@ -216,7 +207,6 @@ human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Factory.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/MainLoopContext.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Runtime.hpp
-human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Stub.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
 

@@ -7,7 +7,14 @@
 namespace DBusStateMachine {
 class Pixel {
  public:
-  Pixel(char color) : color_(color) {}
+  Pixel() = delete;
+  Pixel(const Pixel& pixel) = default;
+  Pixel(Pixel&& pixel) = default;
+  Pixel& operator=(const Pixel& pixel) = default;
+  Pixel& operator=(Pixel&& pixel) = default;
+
+  explicit Pixel(char color) : color_(color) {}
+  ~Pixel() {}
 
   inline char ToChar() const { return color_; }
   bool operator==(const Pixel& r_pixel) const { return color_ == r_pixel.color_; }
@@ -20,7 +27,13 @@ const Pixel kEmptyPixel = Pixel(' ');
 
 class Snap {
  public:
-  Snap(PixelMap image) : image_(image) {}
+  Snap() = delete;
+  Snap(const Snap& snap) = default;
+  Snap(Snap&& snap) = default;
+  Snap& operator=(const Snap& snap) = default;
+  Snap& operator=(Snap&& snap) = default;
+  
+  explicit Snap(PixelMap image) : image_(image) {}
   Snap(int width, int height, Pixel pixel) 
     : width_(width), height_(height), 
       image_(std::vector<std::vector<Pixel>>(height, std::vector<Pixel>(width, pixel))) {}
@@ -59,12 +72,17 @@ class AnimationObject : public Animation {
 
 class AnimationArea : public Animation {
  public:
+  AnimationArea(const AnimationArea& area) = delete;
+  AnimationArea(AnimationArea&& area) = delete;
+  AnimationArea& operator=(const AnimationArea& area) = delete;
+  AnimationArea& operator=(AnimationArea&& area) = delete;
+
   AnimationArea() {}
   AnimationArea(int x, int y, int width, int height)
     : Animation(x, y, width, height) {}
   virtual ~AnimationArea() {}
 
-  void AddAnimation(std::shared_ptr<Animation> animation);
+  void AddAnimation(const std::shared_ptr<Animation>& animation);
   // Animation
   virtual Snap MakeSnap() const override;
  private:

@@ -10,7 +10,7 @@
 
 namespace DBusStateMachine {
 class HumanCharacterServiceClient {
-  enum State { CLIENT_NOT_INIT, SERVICE_NOT_AVAILABLE, READY_TO_USE };
+  enum Status { CLIENT_NOT_INIT, SERVICE_NOT_AVAILABLE, READY_TO_USE };
  public:
   HumanCharacterServiceClient() = delete;
   HumanCharacterServiceClient(const HumanCharacterServiceClient& service) = delete;
@@ -28,7 +28,7 @@ class HumanCharacterServiceClient {
  private:
   bool Initialize();
   
-  State state_;
+  Status status_;
   std::string service_name_;
   std::shared_ptr<CommonAPI::Runtime> runtime_;
   std::shared_ptr<v1::com::luxoft::humancharacterservice::HumanCharacterServiceProxy<>> service_proxy_;

@@ -1,7 +1,6 @@
 #ifndef DBUSSTATEMACHINE_SRC_CHARACTER_HUMAN_CHARACTER_SERVICE_STATE_H_
 #define DBUSSTATEMACHINE_SRC_CHARACTER_HUMAN_CHARACTER_SERVICE_STATE_H_
 
-#include <string>
 #include <thread>
 
 #include "human_character_service_impl.h"

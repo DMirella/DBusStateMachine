@@ -97,29 +97,29 @@ human_character/CMakeFiles/HumanCharacterService.dir/home/dima/work/DBusStateMac
 human_character/CMakeFiles/HumanCharacterService.dir/human_character.cc.o
  /home/dima/work/DBusStateMachine/src/human_character/animation.h
  /home/dima/work/DBusStateMachine/src/human_character/animation_screen.h
- /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character.cc
  /home/dima/work/DBusStateMachine/src/human_character/human_character.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
- /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
+ /home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_animation.cc.o
  /home/dima/work/DBusStateMachine/src/human_character/animation.h
- /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.cc
  /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
- /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
+ /home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
 human_character/CMakeFiles/HumanCharacterService.dir/human_character_service.cc.o
  /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterService.hpp
  /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStub.hpp
  /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
  /home/dima/work/DBusStateMachine/src/human_character/animation.h
- /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service.cc
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
- /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+ /home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp
@@ -141,13 +141,13 @@ human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_imp
  /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStub.hpp
  /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
  /home/dima/work/DBusStateMachine/src/human_character/animation.h
- /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.cc
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
- /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+ /home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp
@@ -169,13 +169,13 @@ human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_sta
  /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStub.hpp
  /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
  /home/dima/work/DBusStateMachine/src/human_character/animation.h
- /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
+ /home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
- /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+ /home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp
@@ -193,16 +193,7 @@ human_character/CMakeFiles/HumanCharacterService.dir/human_character_service_sta
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
 human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o
- /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterService.hpp
- /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStub.hpp
- /home/dima/work/DBusStateMachine/src-gen/v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
- /home/dima/work/DBusStateMachine/src/human_character/animation.h
- /home/dima/work/DBusStateMachine/src/human_character/character_animation.h
- /home/dima/work/DBusStateMachine/src/human_character/human_character.h
- /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
  /home/dima/work/DBusStateMachine/src/human_character/human_character_service.h
- /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
- /home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
  /home/dima/work/DBusStateMachine/src/human_character/main.cc
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
@@ -217,6 +208,5 @@ human_character/CMakeFiles/HumanCharacterService.dir/main.cc.o
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Factory.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/MainLoopContext.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Runtime.hpp
- /home/dima/work/capicxx-core-runtime/include/CommonAPI/Stub.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp

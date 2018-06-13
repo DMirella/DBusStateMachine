@@ -1,11 +1,7 @@
 #include "human_character_service_impl.h"
 
-#include <future>
 #include <iostream>
-#include <thread>
 
-#include "character_animation.h"
-#include "human_character_animation.h"
 #include "human_character_service_state.h"
 
 namespace DBusStateMachine {
@@ -27,15 +23,19 @@ HumanCharacterServiceImpl::~HumanCharacterServiceImpl() {
 
 void HumanCharacterServiceImpl::ArmsUp(const std::shared_ptr<CommonAPI::ClientId> _client, 
 				       ArmsUpReply_t _reply) {
-  //std::cout << "Up command.\n";
+  if (current_state_ == nullptr) {
+    std::cerr << "Error in HumanCharacterServiceImpl::ArmsUp(...): current_state_ == nullptr\n";
+    _reply("Service error.");
+  }
   current_state_->ArmsUp(_reply);
- // std::cout << "Up command2.\n";
 }
 
 void HumanCharacterServiceImpl::ArmsDown(const std::shared_ptr<CommonAPI::ClientId> _client, 
 					 ArmsDownReply_t _reply) {
-  //std::cout << "Down command.\n";
+  if (current_state_ == nullptr) {
+    std::cerr << "Error in HumanCharacterServiceImpl::ArmsDown(...): current_state_ == nullptr\n";
+    _reply("Service error.");
+  }
   current_state_->ArmsDown(_reply);
-  //std::cout << "Down command2.\n";
 }
 }  // DBusStateMachine3

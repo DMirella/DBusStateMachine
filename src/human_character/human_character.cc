@@ -5,36 +5,39 @@
 #include "animation_screen.h"
 
 namespace DBusStateMachine {
-HumanCharacter::HumanCharacter() : screen_(nullptr){
+HumanCharacter::HumanCharacter() 
+    : screen_(nullptr), is_human_character_ready_(false) {
   screen_ = AnimationScreen::GetInstance();
-  Init();
+  if (!(is_human_character_ready_ = Init())) {
+    std::cerr << "Error in HumanCharacter::HumanCharacter(): Initialization failed.\n";
+  }
 }
 
 bool HumanCharacter::Init() {
-  const int animation_area_width = 20, animation_area_height = 20;
-  const int animation_body_x = 5, animation_body_y = 5;
-  const int animation_head_x = animation_body_x - HeadHumanCharacterSnaps::kWidth / 2, 
-            animation_head_y = animation_body_y - HeadHumanCharacterSnaps::kHeight;
-  const int animation_left_arm_x = animation_body_x - ArmHumanCharacterSnaps::kWidth,
-            animation_left_arm_y = animation_body_y - 1;
-  const int animation_right_arm_x = animation_body_x + BodyHumanCharacterSnaps::kWidth,
-            animation_right_arm_y = animation_body_y - 1;
-  const int animation_left_leg_x = animation_body_x - ArmHumanCharacterSnaps::kWidth + 1,
-            animation_left_leg_y = animation_body_y + ArmHumanCharacterSnaps::kHeight;
-  const int animation_right_leg_x = animation_body_x + BodyHumanCharacterSnaps::kWidth,
-            animation_right_leg_y = animation_body_y + BodyHumanCharacterSnaps::kHeight;
+  const int kAnimationAreaWidth = 20, kAnimationAreaHeight = 20;
+  const int kAnimationBodyX = 5, kAnimationBodyY = 5;
+  const int kAnimationHeadX = kAnimationBodyX - HeadHumanCharacterSnaps::kWidth / 2, 
+            kAnimationHeadY = kAnimationBodyY - HeadHumanCharacterSnaps::kHeight;
+  const int kAnimationLeftArmX = kAnimationBodyX - ArmHumanCharacterSnaps::kWidth,
+            kAnimationLeftArmY = kAnimationBodyY - 1;
+  const int kAnimationRightArmX = kAnimationBodyX + BodyHumanCharacterSnaps::kWidth,
+            kAnimationRightArmY = kAnimationBodyY - 1;
+  const int kAnimationLeftLegX = kAnimationBodyX - ArmHumanCharacterSnaps::kWidth + 1,
+            kAnimationLeftLegY = kAnimationBodyY + ArmHumanCharacterSnaps::kHeight;
+  const int kAnimationRightLegX = kAnimationBodyX + BodyHumanCharacterSnaps::kWidth,
+            kAnimationRightLegY = kAnimationBodyY + BodyHumanCharacterSnaps::kHeight;
   
-  animation_area_ = std::make_shared<AnimationArea>(0, 0, animation_area_width, animation_area_height);
-  animation_head_ = std::make_shared<HeadHumanCharacterAnimation>(animation_head_x, animation_head_y);
-  animation_body_ = std::make_shared<BodyHumanCharacterAnimation>(animation_body_x, animation_body_y);
-  animation_left_arm_ = std::make_shared<ArmHumanCharacterAnimation>(animation_left_arm_x, 
-								     animation_left_arm_y,
+  animation_area_ = std::make_shared<AnimationArea>(0, 0, kAnimationAreaWidth, kAnimationAreaHeight);
+  animation_head_ = std::make_shared<HeadHumanCharacterAnimation>(kAnimationHeadX, kAnimationHeadY);
+  animation_body_ = std::make_shared<BodyHumanCharacterAnimation>(kAnimationBodyX, kAnimationBodyY);
+  animation_left_arm_ = std::make_shared<ArmHumanCharacterAnimation>(kAnimationLeftArmX, 
+								     kAnimationLeftArmY,
 								     Arm::LEFT);
-  animation_right_arm_ = std::make_shared<ArmHumanCharacterAnimation>(animation_right_arm_x, 
-								      animation_right_arm_y,
+  animation_right_arm_ = std::make_shared<ArmHumanCharacterAnimation>(kAnimationRightArmX, 
+								      kAnimationRightArmY,
 								      Arm::RIGHT);
-  animation_left_leg_ = std::make_shared<LegHumanCharacterAnimation>(animation_left_leg_x, animation_left_leg_y);
-  animation_right_leg_ = std::make_shared<LegHumanCharacterAnimation>(animation_right_leg_x, animation_right_leg_y);
+  animation_left_leg_ = std::make_shared<LegHumanCharacterAnimation>(kAnimationLeftLegX, kAnimationLeftLegY);
+  animation_right_leg_ = std::make_shared<LegHumanCharacterAnimation>(kAnimationRightLegX, kAnimationRightLegY);
 
   animation_area_->AddAnimation(animation_head_);
   animation_area_->AddAnimation(animation_body_);
@@ -42,11 +45,21 @@ bool HumanCharacter::Init() {
   animation_area_->AddAnimation(animation_right_arm_);
   animation_area_->AddAnimation(animation_left_leg_);
   animation_area_->AddAnimation(animation_right_leg_);
+  
+  if (screen_ == nullptr) {
+    std::cerr << "Error in HumanCharacter::Init(): screen_ == nullptr\n";
+    return false;
+  }
   screen_->set_main_animation(animation_area_);
+  
+  return true;
 }
 
 void HumanCharacter::ArmUp(Arm arm) {
-  //std::cout << "HumanCharacter::ArmUp\n";
+  if (!is_human_character_ready_) {
+    std::cerr << "Error in HumanCharacter::ArmUp(...): HumanCharacter not initialized.\n";
+    return;
+  }
   if (arm == Arm::LEFT) {
     animation_left_arm_->PlayUpArmAnimation();
   } else { 
@@ -55,7 +68,10 @@ void HumanCharacter::ArmUp(Arm arm) {
 }
 
 void HumanCharacter::ArmDown(Arm arm) {
-  //std::cout << "HumanCharacter::ArmDown\n";
+  if (!is_human_character_ready_) {
+    std::cerr << "Error in HumanCharacter::ArmUp(...): HumanCharacter not initialized.\n";
+    return;
+  }
   if (arm == Arm::LEFT) {
     animation_left_arm_->PlayDownArmAnimation();
   } else { 

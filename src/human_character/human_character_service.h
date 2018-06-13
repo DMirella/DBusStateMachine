@@ -6,10 +6,8 @@
 
 #include "CommonAPI/CommonAPI.hpp"
 
-#include "human_character_service_impl.h"
-
 namespace DBusStateMachine {
-class CharacterServiceImpl;
+class HumanCharacterServiceImpl;
 
 class HumanCharacterService {
  public:

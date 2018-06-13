@@ -5,7 +5,7 @@
 
 #include "animation.h"
 #include "human_character_animation.h"
-#include "human_character_snaps.h"
+#include "human_character_constants.h"
 
 namespace DBusStateMachine {
 class AnimationScreen;
@@ -20,6 +20,8 @@ class HumanCharacter {
  private:
   bool Init();
 
+  bool is_human_character_ready_;
+  
   std::shared_ptr<AnimationArea> animation_area_;
   std::shared_ptr<HeadHumanCharacterAnimation> animation_head_;
   std::shared_ptr<BodyHumanCharacterAnimation> animation_body_;

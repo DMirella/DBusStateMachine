@@ -98,12 +98,6 @@ vector
 animation.h
 /home/dima/work/DBusStateMachine/src/human_character/animation.h
 
-/home/dima/work/DBusStateMachine/src/human_character/character_animation.h
-vector
--
-animation.h
-/home/dima/work/DBusStateMachine/src/human_character/animation.h
-
 /home/dima/work/DBusStateMachine/src/human_character/human_character.cc
 human_character.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character.h
@@ -119,34 +113,36 @@ animation.h
 /home/dima/work/DBusStateMachine/src/human_character/animation.h
 human_character_animation.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
-human_character_snaps.h
-/home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+human_character_constants.h
+/home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.cc
 human_character_animation.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
-unistd.h
--
 chrono
--
-iostream
 -
 thread
 -
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
-animation.h
-/home/dima/work/DBusStateMachine/src/human_character/animation.h
-character_animation.h
-/home/dima/work/DBusStateMachine/src/human_character/character_animation.h
-human_character_snaps.h
-/home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
+human_character_constants.h
+/home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
+snaps_animation.h
+/home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
+
+/home/dima/work/DBusStateMachine/src/human_character/human_character_constants.h
+string
+-
+vector
+-
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service.cc
 human_character_service.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service.h
 iostream
 -
+human_character_service_impl.h
+/home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service.h
 memory
@@ -155,22 +151,12 @@ string
 -
 CommonAPI/CommonAPI.hpp
 /home/dima/work/DBusStateMachine/src/human_character/CommonAPI/CommonAPI.hpp
-human_character_service_impl.h
-/home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.cc
 human_character_service_impl.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
-future
--
 iostream
 -
-thread
--
-character_animation.h
-/home/dima/work/DBusStateMachine/src/human_character/character_animation.h
-human_character_animation.h
-/home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
 human_character_service_state.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
 
@@ -187,34 +173,30 @@ v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc
 human_character_service_state.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
-future
--
-iostream
--
 human_character_service_impl.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
-string
--
 thread
 -
 human_character_service_impl.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
 
-/home/dima/work/DBusStateMachine/src/human_character/human_character_snaps.h
-string
--
-vector
--
-
 /home/dima/work/DBusStateMachine/src/human_character/main.cc
-unistd.h
+chrono
 -
 iostream
 -
+thread
+-
 human_character_service.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service.h
+
+/home/dima/work/DBusStateMachine/src/human_character/snaps_animation.h
+vector
+-
+animation.h
+/home/dima/work/DBusStateMachine/src/human_character/animation.h
 
 /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
 iostream

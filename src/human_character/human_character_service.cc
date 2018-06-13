@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include "human_character_service_impl.h"
+
 namespace DBusStateMachine {
 HumanCharacterService::HumanCharacterService(const std::string& service_name) 
     : service_name_(service_name), runtime_(nullptr), service_(nullptr), is_service_ready_(false) {

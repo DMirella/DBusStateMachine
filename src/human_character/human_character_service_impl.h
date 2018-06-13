@@ -30,10 +30,10 @@ class HumanCharacterServiceImpl
   virtual ~HumanCharacterServiceImpl();
   // CharacterServiceStubDefault
   virtual void ArmsUp(const std::shared_ptr<CommonAPI::ClientId> _client, 
-		     ArmsUpReply_t _reply) override;
+		      ArmsUpReply_t _reply) override;
   virtual void ArmsDown(const std::shared_ptr<CommonAPI::ClientId> _client,
-		       ArmsDownReply_t _reply) override;
-  inline void ChangeState(std::shared_ptr<ServiceState> state) { current_state_ = state; }
+		        ArmsDownReply_t _reply) override;
+  inline void ChangeState(const std::shared_ptr<ServiceState>& state) { current_state_ = state; }
  private:
   friend class ServiceArmsUpState;
   friend class ServiceArmsDownState;
