@@ -155,8 +155,6 @@ CommonAPI/CommonAPI.hpp
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.cc
 human_character_service_impl.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
-iostream
--
 human_character_service_state.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
 
@@ -173,8 +171,6 @@ v1/com/luxoft/humancharacterservice/HumanCharacterServiceStubDefault.hpp
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.cc
 human_character_service_state.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
-human_character_service_impl.h
-/home/dima/work/DBusStateMachine/src/human_character/human_character_service_impl.h
 
 /home/dima/work/DBusStateMachine/src/human_character/human_character_service_state.h
 thread

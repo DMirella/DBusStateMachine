@@ -14,7 +14,7 @@ HumanCharacter::HumanCharacter()
 }
 
 bool HumanCharacter::Init() {
-  const int kAnimationAreaWidth = 20, kAnimationAreaHeight = 20;
+  const int kAnimationAreaWidth = 20, kAnimationAreaHeight = 20, kAnimationAreaX = 5, kAnimationAreaY = 5;
   const int kAnimationBodyX = 5, kAnimationBodyY = 5;
   const int kAnimationHeadX = kAnimationBodyX - HeadHumanCharacterSnaps::kWidth / 2, 
             kAnimationHeadY = kAnimationBodyY - HeadHumanCharacterSnaps::kHeight;
@@ -27,7 +27,8 @@ bool HumanCharacter::Init() {
   const int kAnimationRightLegX = kAnimationBodyX + BodyHumanCharacterSnaps::kWidth,
             kAnimationRightLegY = kAnimationBodyY + BodyHumanCharacterSnaps::kHeight;
   
-  animation_area_ = std::make_shared<AnimationArea>(0, 0, kAnimationAreaWidth, kAnimationAreaHeight);
+  animation_area_ = std::make_shared<AnimationArea>(kAnimationAreaX, kAnimationAreaY, 
+						    kAnimationAreaWidth, kAnimationAreaHeight);
   animation_head_ = std::make_shared<HeadHumanCharacterAnimation>(kAnimationHeadX, kAnimationHeadY);
   animation_body_ = std::make_shared<BodyHumanCharacterAnimation>(kAnimationBodyX, kAnimationBodyY);
   animation_left_arm_ = std::make_shared<ArmHumanCharacterAnimation>(kAnimationLeftArmX, 

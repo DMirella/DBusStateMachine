@@ -34,16 +34,16 @@ void AnimationScreen::set_main_animation(const std::shared_ptr<Animation>& anima
 void AnimationScreen::StartScreenThread() {
   is_need_to_destroy_screen_thread_ = false;
   screen_thread_ = std::thread([this]() {
-                           while (!is_need_to_destroy_screen_thread_) {
-			     system("clear");
-			     if (main_animation_ != nullptr) {
-                               PrintSnap(main_animation_->MakeSnap());
-			     } else {
-			       std::cout << "No animation to view(Try to set the main animation).\n";
-			     }
-                             std::this_thread::sleep_for(kPauseScreenThreadTimeMs);
-                           } 
-                         });
+                                 while (!is_need_to_destroy_screen_thread_) {
+			     	   system("clear");
+			     	   if (main_animation_ != nullptr) {
+                               	     PrintSnap(main_animation_->MakeSnap());
+			     	   } else {
+			             std::cout << "No animation to view(Try to set the main animation).\n";
+			     	   }
+                             	   std::this_thread::sleep_for(kPauseScreenThreadTimeMs);
+                                 } 
+                               });
 }
 
 void AnimationScreen::PrintSnap(const Snap& snap) const {

@@ -9,8 +9,6 @@
 #include "animation.h"
 
 namespace DBusStateMachine {
-class Animation;
-
 class AnimationScreen {
  public:
   AnimationScreen(const AnimationScreen& service) = delete;

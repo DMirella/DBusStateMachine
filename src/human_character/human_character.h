@@ -12,6 +12,11 @@ class AnimationScreen;
 
 class HumanCharacter {
  public:
+  HumanCharacter(const HumanCharacter& human) = delete;
+  HumanCharacter(HumanCharacter&& human) = delete;
+  HumanCharacter& operator=(const HumanCharacter& human) = delete;
+  HumanCharacter& operator=(HumanCharacter&& human) = delete;
+
   HumanCharacter();
   ~HumanCharacter() {}
 

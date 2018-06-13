@@ -5,15 +5,14 @@
 #include "snaps_animation.h"
 
 namespace DBusStateMachine {
-enum Arm;
 class ArmHumanCharacterAnimation : public SnapsAnimation {
  public:
+  ArmHumanCharacterAnimation() = delete;
   ArmHumanCharacterAnimation(const ArmHumanCharacterAnimation& animation) = delete;
   ArmHumanCharacterAnimation(ArmHumanCharacterAnimation&& animation) = delete;
   ArmHumanCharacterAnimation& operator=(const ArmHumanCharacterAnimation& animation) = delete;
   ArmHumanCharacterAnimation& operator=(ArmHumanCharacterAnimation&& animation) = delete;
 
-  ArmHumanCharacterAnimation() {}
   ArmHumanCharacterAnimation(int x, int y, Arm arm);
   ~ArmHumanCharacterAnimation() {}
   
@@ -23,36 +22,36 @@ class ArmHumanCharacterAnimation : public SnapsAnimation {
 
 class LegHumanCharacterAnimation : public SnapsAnimation {
  public:
+  LegHumanCharacterAnimation() = delete;
   LegHumanCharacterAnimation(const LegHumanCharacterAnimation& animation) = delete;
   LegHumanCharacterAnimation(LegHumanCharacterAnimation&& animation) = delete;
   LegHumanCharacterAnimation& operator=(const LegHumanCharacterAnimation& animation) = delete;
   LegHumanCharacterAnimation& operator=(LegHumanCharacterAnimation&& animation) = delete;
 
-  LegHumanCharacterAnimation() {}
   LegHumanCharacterAnimation(int x, int y);
   ~LegHumanCharacterAnimation() {}
 };
 
 class BodyHumanCharacterAnimation : public SnapsAnimation {
  public:
+  BodyHumanCharacterAnimation() = delete;
   BodyHumanCharacterAnimation(const BodyHumanCharacterAnimation& animation) = delete;
   BodyHumanCharacterAnimation(BodyHumanCharacterAnimation&& animation) = delete;
   BodyHumanCharacterAnimation& operator=(const BodyHumanCharacterAnimation& animation) = delete;
   BodyHumanCharacterAnimation& operator=(BodyHumanCharacterAnimation&& animation) = delete;
 
-  BodyHumanCharacterAnimation() {}
   BodyHumanCharacterAnimation(int x, int y);
   ~BodyHumanCharacterAnimation() {}
 };
 
 class HeadHumanCharacterAnimation : public SnapsAnimation {
  public:
+  HeadHumanCharacterAnimation() = delete;
   HeadHumanCharacterAnimation(const HeadHumanCharacterAnimation& animation) = delete;
   HeadHumanCharacterAnimation(HeadHumanCharacterAnimation&& animation) = delete;
   HeadHumanCharacterAnimation& operator=(const HeadHumanCharacterAnimation& animation) = delete;
   HeadHumanCharacterAnimation& operator=(HeadHumanCharacterAnimation&& animation) = delete;
 
-  HeadHumanCharacterAnimation() {}
   HeadHumanCharacterAnimation(int x, int y);
   ~HeadHumanCharacterAnimation() {}
 };

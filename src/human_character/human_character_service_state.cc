@@ -1,7 +1,5 @@
 #include "human_character_service_state.h"
 
-#include "human_character_service_impl.h"
-
 namespace DBusStateMachine {
 ServiceArmsUpState::~ServiceArmsUpState() {
   if (arms_moving_thread_.joinable()) {

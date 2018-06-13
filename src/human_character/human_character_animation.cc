@@ -34,17 +34,17 @@ void ArmHumanCharacterAnimation::PlayDownArmAnimation() {
 
 LegHumanCharacterAnimation::LegHumanCharacterAnimation(int x, int y) 
     : SnapsAnimation(x, y, LegHumanCharacterSnaps::kWidth, LegHumanCharacterSnaps::kHeight, 
-			 StringsToSnaps(LegHumanCharacterSnaps::kSnaps), LegHumanCharacterSnaps::kSpeed) {
+		     StringsToSnaps(LegHumanCharacterSnaps::kSnaps), LegHumanCharacterSnaps::kSpeed) {
 }
 
 BodyHumanCharacterAnimation::BodyHumanCharacterAnimation(int x, int y) 
     : SnapsAnimation(x, y, BodyHumanCharacterSnaps::kWidth, BodyHumanCharacterSnaps::kHeight, 
-			 StringsToSnaps(BodyHumanCharacterSnaps::kSnaps), BodyHumanCharacterSnaps::kSpeed) {
+		     StringsToSnaps(BodyHumanCharacterSnaps::kSnaps), BodyHumanCharacterSnaps::kSpeed) {
 }
 
 HeadHumanCharacterAnimation::HeadHumanCharacterAnimation(int x, int y) 
     : SnapsAnimation(x, y, HeadHumanCharacterSnaps::kWidth, HeadHumanCharacterSnaps::kHeight, 
-			 StringsToSnaps(HeadHumanCharacterSnaps::kSnaps), HeadHumanCharacterSnaps::kSpeed) {
+	             StringsToSnaps(HeadHumanCharacterSnaps::kSnaps), HeadHumanCharacterSnaps::kSpeed) {
 }
 
 namespace {

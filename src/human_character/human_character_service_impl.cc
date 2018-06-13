@@ -1,19 +1,16 @@
 #include "human_character_service_impl.h"
 
-#include <iostream>
-
 #include "human_character_service_state.h"
 
 namespace DBusStateMachine {
 HumanCharacterServiceImpl::HumanCharacterServiceImpl() {
-  initialize_state_  = std::make_shared<ServiceInitializeState>(this);
-  ChangeState(initialize_state_);
-  
+  ChangeState(initialize_state_ = std::make_shared<ServiceInitializeState>(this));
+
   destroy_state_ = std::make_shared<ServiceDestroyState>(this);
   arms_moving_state_ = std::make_shared<ServiceArmsMovingState>(this);
   arms_up_state_ = std::make_shared<ServiceArmsUpState>(this);
   arms_down_state_ = std::make_shared<ServiceArmsDownState>(this);
-  
+
   ChangeState(arms_down_state_);
 }
 

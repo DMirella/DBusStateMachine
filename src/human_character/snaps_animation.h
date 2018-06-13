@@ -19,7 +19,6 @@ class SnapsAnimation : public AnimationObject {
   std::vector<Snap> snaps_;
   std::vector<Snap>::iterator current_snap_;
   int speed_;  // count snap views for one second
-
 };
 }  // DBusStateMachine
 
