@@ -8,6 +8,7 @@ namespace DBusStateMachine {
 class Pixel {
  public:
   Pixel() = delete;
+
   Pixel(const Pixel& pixel) = default;
   Pixel(Pixel&& pixel) = default;
   Pixel& operator=(const Pixel& pixel) = default;
@@ -28,6 +29,7 @@ const Pixel kEmptyPixel = Pixel(' ');
 class Snap {
  public:
   Snap() = delete;
+
   Snap(const Snap& snap) = default;
   Snap(Snap&& snap) = default;
   Snap& operator=(const Snap& snap) = default;

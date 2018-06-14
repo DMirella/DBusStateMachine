@@ -33,9 +33,6 @@ class HumanCharacterServiceClient {
   std::shared_ptr<CommonAPI::Runtime> runtime_;
   std::shared_ptr<v1::com::luxoft::humancharacterservice::HumanCharacterServiceProxy<>> service_proxy_;
 };
-
-
-
 }  // DBusStateMachine
 
 #endif  // DBUSSTATEMACHINE_SRC_CHARACTER_HUMAN_CHARACTER_SERVICE_CLIENT_H_

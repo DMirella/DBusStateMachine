@@ -109,8 +109,6 @@ animation_screen.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character.h
 memory
 -
-animation.h
-/home/dima/work/DBusStateMachine/src/human_character/animation.h
 human_character_animation.h
 /home/dima/work/DBusStateMachine/src/human_character/human_character_animation.h
 human_character_constants.h

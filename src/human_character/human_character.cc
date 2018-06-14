@@ -56,20 +56,36 @@ void HumanCharacter::ArmUp(Arm arm) {
     return;
   }
   if (arm == Arm::LEFT) {
+    if (animation_left_arm_ == nullptr) {
+      std::cerr << "Error in HumanCharacter::ArmUp(...): animation_left_arm_ == nullptr\n";
+      return;
+    }
     animation_left_arm_->PlayUpArmAnimation();
-  } else { 
+  } else {
+    if (animation_left_arm_ == nullptr) {
+      std::cerr << "Error in HumanCharacter::ArmUp(...): animation_right_arm_ == nullptr\n";
+      return;
+    }
     animation_right_arm_->PlayUpArmAnimation();
   }
 }
 
 void HumanCharacter::ArmDown(Arm arm) {
   if (!is_human_character_ready_) {
-    std::cerr << "Error in HumanCharacter::ArmUp(...): HumanCharacter not initialized.\n";
+    std::cerr << "Error in HumanCharacter::ArmDown(...): HumanCharacter not initialized.\n";
     return;
   }
   if (arm == Arm::LEFT) {
+    if (animation_left_arm_ == nullptr) {
+      std::cerr << "Error in HumanCharacter::ArmDown(...): animation_left_arm_ == nullptr\n";
+      return;
+    }
     animation_left_arm_->PlayDownArmAnimation();
   } else { 
+    if (animation_right_arm_ == nullptr) {
+      std::cerr << "Error in HumanCharacter::ArmDown(...): animation_right_arm_ == nullptr\n";
+      return;
+    }
     animation_right_arm_->PlayDownArmAnimation();
   }
   

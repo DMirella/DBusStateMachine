@@ -19,7 +19,7 @@ ArmHumanCharacterAnimation::ArmHumanCharacterAnimation(int x, int y, Arm arm)
 void ArmHumanCharacterAnimation::PlayUpArmAnimation() {
   const auto kTimeoutPause = kOneSecondMs / speed_;
   for (int i = 0; i < snaps_.size(); ++i) {
-    current_snap_ = snaps_.begin() + i;
+    set_current_snap(snaps_.begin() + i);
     std::this_thread::sleep_for(kTimeoutPause);
   }
 }
@@ -27,7 +27,7 @@ void ArmHumanCharacterAnimation::PlayUpArmAnimation() {
 void ArmHumanCharacterAnimation::PlayDownArmAnimation() {
   const auto kTimeoutPause = kOneSecondMs / speed_;
   for (int i = snaps_.size() - 1; i >= 0; --i) {
-    current_snap_ = snaps_.begin() + i;
+    set_current_snap(snaps_.begin() + i);
     std::this_thread::sleep_for(kTimeoutPause);
   }
 }

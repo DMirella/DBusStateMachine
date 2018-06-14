@@ -12,13 +12,16 @@ class SnapsAnimation : public AnimationObject {
   // CharacterAnimation
   virtual Snap MakeSnap() const override { return *current_snap_; }
  protected:
+  inline void set_current_snap(const std::vector<Snap>::iterator& snap) { current_snap_ = snap; }
+
   SnapsAnimation() : current_snap_(snaps_.begin()) {}
   SnapsAnimation(int x, int y, int width, int height, const std::vector<Snap>& snaps, int speed)
     : AnimationObject(x, y, width, height), snaps_(snaps), speed_(speed), current_snap_(snaps_.begin()) {}
 
   std::vector<Snap> snaps_;
-  std::vector<Snap>::iterator current_snap_;
   int speed_;  // count snap views for one second
+ private:
+  std::vector<Snap>::iterator current_snap_;
 };
 }  // DBusStateMachine
 

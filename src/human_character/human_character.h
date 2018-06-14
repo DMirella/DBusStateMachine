@@ -3,7 +3,6 @@
 
 #include <memory>
 
-#include "animation.h"
 #include "human_character_animation.h"
 #include "human_character_constants.h"
 
